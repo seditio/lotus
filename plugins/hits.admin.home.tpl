@@ -2,7 +2,7 @@
 
 <!-- BEGIN: STAT -->
 	<div class="block">
-		<h5>{PHP.L.hits_hits}</h5>
+		<h5><i class="icon-bar-chart"></i> {PHP.L.hits_hits}</h5>
 		<table class="table table-striped">
 <!-- BEGIN: ADMIN_HOME_ROW -->
 			<tr>
@@ -22,7 +22,7 @@
 
 <!-- BEGIN: ACTIVITY -->
 	<div class="block">
-		<h5>{PHP.L.hits_activity}</h5>
+		<h5><i class="icon-bar-chart"></i> {PHP.L.hits_activity}</h5>
 		<table class="table table-striped">
 			<tr>
 				<td class="width80"><a href="{ADMIN_HOME_NEWUSERS_URL}">{PHP.L.home_newusers}</a></td>

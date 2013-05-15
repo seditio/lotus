@@ -42,15 +42,15 @@
 <!-- END: ROW_ITEMS -->
 										<td class="centerall">
 											<a class="btn btn-success btn-small" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_JUMPTO}"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
-											<a class="btn btn-danger btn-small" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_LINK}"><i class="icon-lock"></i> {PHP.L.Rights}</a> </td>
+											<a class="btn btn-warning btn-small" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_LINK}"><i class="icon-lock"></i> {PHP.L.Rights}</a> </td>
 										<td class="textcenter">{ADMIN_RIGHTSBYITEM_ROW_USER}{ADMIN_RIGHTSBYITEM_ROW_PRESERVE}</td>
 										
 									</tr>
 <!-- END: RIGHTSBYITEM_ROW -->
 									<tr>
 										<td class="textcenter" colspan="{ADMIN_RIGHTSBYITEM_4ADV_COLUMNS}">
-											<a class="btn btn-primary" href="{ADMIN_RIGHTSBYITEM_ADVANCED_URL}">{PHP.L.More}</a>
-											<button type="submit" class="btn btn-danger">{PHP.L.Update}</button>
+											<a class="btn btn-primary" href="{ADMIN_RIGHTSBYITEM_ADVANCED_URL}"><i class="icon-hand-right"></i> {PHP.L.ReadMore}</a>
+											<button type="submit" class="btn btn-danger"><i class="icon-refresh"></i> {PHP.L.Update}</button>
 										</td>
 									</tr>
 								</tbody>

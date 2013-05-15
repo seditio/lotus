@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
 <div class="block">
-<h5>{PHP.L.Pages}</h5>
+<h5><i class="icon-file-alt"></i> {PHP.L.Pages}</h5>
 <ul class="follow">
 	<li><a href="{ADMIN_HOME_URL}">{PHP.L.adm_valqueue}: {ADMIN_HOME_PAGESQUEUED}</a></li>
 	<li><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>

@@ -76,7 +76,6 @@
 <!-- END: ROW_WEEK -->
 						</table>
 <!-- END: DEFAULT -->
-	
 					</div>
 				</div>
 			</div>

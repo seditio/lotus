@@ -22,7 +22,7 @@
 			
 				<div class="span4">
 					<div class="block">
-						<h5>Cotonti:</h5>
+						<h5><i class="icon-magnet"></i> Cotonti:</h5>
 						<table class="table table-striped">
 							<tr>
 								<td>{PHP.L.Version}</td>
@@ -68,7 +68,7 @@
 				
 				<div class="span4">
 					<div class="block">
-						<h5>{PHP.L.home_ql_b1_title}</h5>
+						<h5><i class="icon-cogs"></i> {PHP.L.home_ql_b1_title}</h5>
 						<ul class="follow">
 							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
 							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>

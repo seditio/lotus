@@ -7,7 +7,7 @@
 		
 <!-- BEGIN: EDIT -->
 			<div class="block">
-			<h5>{PHP.L.Configuration}</h5>
+			<h5><i class="icon-cogs"></i> {PHP.L.Configuration}</h5>
 			{ADMIN_CONFIG_EDIT_CUSTOM}
 			<form name="saveconfig" id="saveconfig" action="{ADMIN_CONFIG_FORM_URL}" method="post" class="ajax">
 			<table class="table table-bordered">
@@ -61,7 +61,7 @@
 <!-- BEGIN: ADMIN_CONFIG_COL -->
 				<div class="span4">
 					<div class="block">
-						<h5>{ADMIN_CONFIG_COL_CAPTION}:</h5>
+						<h5><i class="icon-cog"></i> {ADMIN_CONFIG_COL_CAPTION}:</h5>
 						<table class="table table-striped">
 <!-- BEGIN: ADMIN_CONFIG_ROW -->
 							<tr>
