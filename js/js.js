@@ -35,4 +35,10 @@ $().ready(function() {
 		
 	})();
 	
+	
+	$(".adminconfigmore").each(function() {
+		if ($(this).html())
+			$(this).wrapInner('<span />');
+	});
+	
 });

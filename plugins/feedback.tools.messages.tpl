@@ -1,6 +1,10 @@
 <!-- BEGIN: MAIN -->
 
-	<h2 class="message"><a href="admin.php?m=tools&p=feedback">{PHP.L.feedback_title}</a></h2>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="block">
+						<h5>{PHP.L.feedback_title}</h5>
 
 <!-- BEGIN: VIEW -->
 	<h3>{PHP.L.feedback_view} #{CONTACT_ID}</h3>
@@ -61,4 +65,9 @@
 	</table>
 	<p class="paging">{CONTACT_PREV}{CONTACT_PAGINATION}{CONTACT_NEXT}</p>
 
+					</div>
+				</div>
+			</div>
+		</div>
+	
 <!-- END: MAIN -->

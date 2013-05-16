@@ -3,9 +3,11 @@
 <!-- BEGIN: UPDATE -->
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="alert alert-warning">
-					<h4>{PHP.L.adminqv_update_notice}:</h4>
-					<p>{ADMIN_HOME_UPDATE_REVISION} {ADMIN_HOME_UPDATE_MESSAGE}</p>
+				<div class="span12">
+					<div class="alert alert-warning">
+						<h4>{PHP.L.adminqv_update_notice}:</h4>
+						<p>{ADMIN_HOME_UPDATE_REVISION} {ADMIN_HOME_UPDATE_MESSAGE}</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -13,13 +15,14 @@
 
 		<div class="container-fluid">
 			<div class="row-fluid">
+				<div class="span12">
 {FILE "themes/admin/lotus/warnings.tpl"}
+				</div>
 			</div>
 		</div>
 
 		<div class="container-fluid">
 			<div class="row-fluid">
-			
 				<div class="span4">
 					<div class="block">
 						<h5><i class="icon-magnet"></i> Cotonti:</h5>
@@ -59,13 +62,11 @@
 						</table>
 					</div>
 				</div>
-				
 				<div class="span4">
-	<!-- BEGIN: MAINPANEL -->
+<!-- BEGIN: MAINPANEL -->
 					{ADMIN_HOME_MAINPANEL}
-	<!-- END: MAINPANEL -->
+<!-- END: MAINPANEL -->
 				</div>
-				
 				<div class="span4">
 					<div class="block">
 						<h5><i class="icon-cogs"></i> {PHP.L.home_ql_b1_title}</h5>
@@ -82,7 +83,6 @@
 					{ADMIN_HOME_SIDEPANEL}
 	<!-- END: SIDEPANEL -->
 				</div>
-				
 			</div>
 		</div>
 

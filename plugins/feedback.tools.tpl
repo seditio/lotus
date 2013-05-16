@@ -1,7 +1,12 @@
 <!-- BEGIN: MAIN -->
 
-	<h2 class="message"><a href="admin.php?m=tools&p=feedback">{PHP.L.feedback_title}</a></h2>
-	<table class="cells">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="block">
+					<h5>{PHP.L.feedback_title}</h5>
+					
+	<table class="table">
 		<tr>
 			<td class="coltop width15">{PHP.L.Date}</td>
 			<td class="coltop width20">{PHP.L.User}</td>
@@ -62,5 +67,10 @@
 		</table>
 	 </form>
 <!-- END: VIEW -->
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 <!-- END: MAIN -->

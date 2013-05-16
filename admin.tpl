@@ -3,6 +3,23 @@
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
+				<div id="topbar">
+					<a href="#" id="toggler">
+						<i class="icon-reorder"></i>
+					</a>
+					<a href="{PHP.cfg.mainurl}" title="{PHP.L.hea_viewsite}" id="home">
+						<!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle} <!-- ELSE -->{PHP.L.hea_viewsite} <!-- ENDIF -->
+					</a>
+					<a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a>
+					{PHP.out.loginout}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
 				<div id="breadcrumbs">
 					{ADMIN_TITLE}
 				</div>

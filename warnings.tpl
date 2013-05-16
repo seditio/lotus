@@ -1,5 +1,6 @@
 <!-- BEGIN: ERROR -->
 <div class="alert alert-error">
+	<a class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
 	<h4>{PHP.L.Error}</h4>
 	<ul>
 		<!-- BEGIN: ERROR_ROW -->

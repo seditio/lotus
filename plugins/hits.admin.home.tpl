@@ -8,7 +8,7 @@
 			<tr>
 				<td class="width15">{ADMIN_HOME_DAY}</td>
 				<td class="width60">
-					<div class="progress progress-striped active">
+					<div class="progress progress-striped">
 						<div class="bar" style="width:{ADMIN_HOME_PERCENTBAR}%;">{ADMIN_HOME_PERCENTBAR}%</div>
 					</div>
 				</td>
