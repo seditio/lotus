@@ -1,8 +1,5 @@
 <!-- BEGIN: MAIN -->
-
-		<div class="container-fluid">
 			<div class="row-fluid">
-			
 				<div class="block">
 					<h5>{PHP.L.adm_internalcache}</h5>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
@@ -12,7 +9,6 @@
 						<a href="{ADMIN_CACHE_URL_SHOWALL}" class="ajax btn btn-primary">{PHP.L.adm_cache_showall}</a>
 					</p>
 				</div>
-		
 <!-- BEGIN: ADMIN_CACHE_MEMORY -->
 				<div class="block">
 					<h5>{ADMIN_CACHE_MEMORY_DRIVER}</h5>
@@ -24,7 +20,6 @@
 					</p>
 				</div>
 <!-- END: ADMIN_CACHE_MEMORY -->
-
 				<div class="block">
 					<h5>{PHP.L.Database}</h5>
 					<table class="table table-bordered">
@@ -58,7 +53,5 @@
 						</thead>
 					</table>
 				</div>
-		
 			</div>
-		</div>
 <!-- END: MAIN -->

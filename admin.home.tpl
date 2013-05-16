@@ -1,7 +1,6 @@
 <!-- BEGIN: MAIN -->
 
 <!-- BEGIN: UPDATE -->
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
 					<div class="alert alert-warning">
@@ -10,18 +9,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
 <!-- END: UPDATE -->
 
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 				</div>
 			</div>
-		</div>
 
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span4">
 					<div class="block">
@@ -84,6 +79,5 @@
 	<!-- END: SIDEPANEL -->
 				</div>
 			</div>
-		</div>
 
 <!-- END: MAIN -->

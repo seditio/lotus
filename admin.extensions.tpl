@@ -1,17 +1,19 @@
 <!-- BEGIN: MAIN -->
 
-		<div class="container-fluid">
 			<div class="row-fluid">
 
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 <!-- BEGIN: DEFAULT -->
-<p>
-	<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="icon-font"></i> {PHP.L.adm_sort_alphabet}</a>
-	<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}"><i class="icon-sitemap"></i> {PHP.L.adm_sort_category}</a>
-	<a class="btn btn-success <!-- IF {ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->special" href="{ADMIN_EXTENSIONS_ALL_EXTENSIONS_URL}"<!-- ELSE-->" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ENDIF -->><i class="icon-ok-circle"></i> {PHP.L.adm_only_installed}</a>
-	<a class="btn btn-primary" href="{ADMIN_EXTENSIONS_HOOKS_URL}"><i class="icon-code"></i> {PHP.L.Hooks}</a>
-</p>
+				<div class="block">
+					<h5>Extensions Control</h5>
+					<p>
+						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="icon-font"></i> {PHP.L.adm_sort_alphabet}</a>
+						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}"><i class="icon-sitemap"></i> {PHP.L.adm_sort_category}</a>
+						<a class="btn btn-success <!-- IF {ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->special" href="{ADMIN_EXTENSIONS_ALL_EXTENSIONS_URL}"<!-- ELSE-->" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ENDIF -->><i class="icon-ok-circle"></i> {PHP.L.adm_only_installed}</a>
+						<a class="btn btn-primary" href="{ADMIN_EXTENSIONS_HOOKS_URL}"><i class="icon-code"></i> {PHP.L.Hooks}</a>
+					</p>
+				</div>
 
 <!-- BEGIN: SECTION -->
 	<div class="block">
@@ -312,6 +314,5 @@
 <!-- END: HOOKS -->
 
 			</div>
-		</div>
 
 <!-- END: MAIN -->

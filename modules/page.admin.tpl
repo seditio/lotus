@@ -1,17 +1,16 @@
 <!-- BEGIN: MAIN -->
-	<script type="text/javascript">
-		$(document).ready(function()
-		{
-			$('.moreinfo').hide();
-			$(".mor_info_on_off").click(function()
-			{
-				var kk = $(this).attr('id');
-				$('#'+kk).children('.moreinfo').slideToggle(100);
-			});
-		});
-	</script>
+			<script type="text/javascript">
+				$(document).ready(function()
+				{
+					$('.moreinfo').hide();
+					$(".mor_info_on_off").click(function()
+					{
+						var kk = $(this).attr('id');
+						$('#'+kk).children('.moreinfo').slideToggle(100);
+					});
+				});
+			</script>
 
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
 					<div class="block">
@@ -103,6 +102,4 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
 <!-- END: MAIN -->

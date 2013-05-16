@@ -1,23 +1,27 @@
 <!-- BEGIN: MAIN -->
 
 	<div class="container-fluid">
+	<div id="wrap">
+	
 		<div class="row-fluid">
 			<div class="span12">
 				<div id="topbar">
-					<a href="#" id="toggler">
+					<button class="btn btn-navbar">
 						<i class="icon-reorder"></i>
-					</a>
-					<a href="{PHP.cfg.mainurl}" title="{PHP.L.hea_viewsite}" id="home">
-						<!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle} <!-- ELSE -->{PHP.L.hea_viewsite} <!-- ENDIF -->
-					</a>
-					<a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a>
-					{PHP.out.loginout}
+					</button>
+					<ul class="pull-right">
+						<li>
+							<a href="{PHP.cfg.mainurl}" title="{PHP.L.hea_viewsite}" id="home">
+								<!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle} <!-- ELSE -->{PHP.L.hea_viewsite} <!-- ENDIF -->
+							</a>
+						</li>
+						<li><a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></li>
+						<li>{PHP.out.loginout}</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<div id="breadcrumbs">
@@ -25,10 +29,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<nav>
-		<div class="container-fluid">
+		<nav>
 			<h1>Section Name</h1>
 			<div class="row-fluid">
 				<div class="span2">
@@ -76,8 +78,7 @@
 					</a>
 				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
 	<div id="ajaxBlock">
 
@@ -86,18 +87,19 @@
 		{ADMIN_MAIN}
 		
 <!-- IF {ADMIN_HELP} -->
-	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="alert alert-info">
 				<h4>{PHP.L.Help}:</h4>
 				<p>{ADMIN_HELP}</p>
 			</div>
 		</div>
-	</div>
 <!-- ENDIF -->
 
 <!-- END: BODY -->
 
+	</div>
+	
+	</div>
 	</div>
 
 <!-- END: MAIN -->

@@ -1,8 +1,5 @@
 <!-- BEGIN: MAIN -->
-
-		<div class="container-fluid">
 			<div class="row-fluid">
-			
 				<div class="block">
 					<h5>{PHP.L.Users}</h5>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
@@ -10,7 +7,6 @@
 						<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
 						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields_desc}</a>
 					</p>
-
 <!-- BEGIN: ADMIN_USERS_DEFAULT -->
 					<table class="table table-bordered">
 						<thead>
@@ -189,8 +185,5 @@
 				</table>
 			</form>
 <!-- END: ADMIN_USERS_EDIT -->
-
 			</div>
-		</div>
-
 <!-- END: MAIN -->

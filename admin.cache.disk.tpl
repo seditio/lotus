@@ -1,6 +1,4 @@
 <!-- BEGIN: MAIN -->
-
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="block">
 					<h5>Disk Cache</h5>
@@ -40,5 +38,4 @@
 					</table>
 				</div>
 			</div>
-		</div>
 <!-- END: MAIN -->

@@ -1,6 +1,4 @@
 <!-- BEGIN: MAIN -->
-
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
 <!-- IF {PHP.is_adminwarnings} -->
@@ -27,6 +25,4 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	
 <!-- END: MAIN -->

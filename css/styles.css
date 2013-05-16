@@ -8,14 +8,14 @@ body					{ color:#333; font-family:'Open Sans', sans-serif; font-size:13px; back
 /* 2. Structure
 -------------------------------------------------- */
 
-div#topbar							{ height:30px; background:#333; background-image:linear-gradient(to bottom, #3f3f3f, #333); overflow:hidden; }
-	div#topbar a						{ color:#fff; font-size:12px; line-height:28px; margin:0 0 0 15px; height:30px; display:block; float:left; }
-	div#topbar a:hover				{ color:#ddd; text-decoration:none; }
+#wrap								{  }
+
+div#topbar							{ padding:10px 0; height:20px; position:relative; }
 	
-	div#topbar a#toggler				{ color:#f5f5f5; font-size:18px; text-align:center; margin:0; width:40px; background:#2f2f2f; border-right:1px solid #000; }
-	div#topbar a#toggler i				{ line-height:28px; display:block; }
+	div#topbar ul						{ margin:0; list-style:none; }
+	div#topbar ul li					{ margin:0 0 0 10px; float:left; }
 	
-	div#topbar a#home					{  }
+	div#topbar button.btn-navbar		{ position:absolute; top:5px; left:0; }
 
 nav						{  }
 	nav .span2 a			{ color:#4c4c4c; text-align:center; margin:0 0 15px; padding:24px 0; height:72px; background:#fff; border:1px solid #c1c1c1; display:block; }
@@ -25,7 +25,7 @@ nav						{  }
 	
 select#selectmenu		{ width:100%; display:none; }
 
-#breadcrumbs			{ font-size:12px; line-height:38px; margin:0 -20px; padding:0 20px; height:38px; background:#fafafa; border-bottom:1px solid #ddd; }
+#breadcrumbs			{ font-size:12px; line-height:38px; padding:0 20px; height:38px; background:#fafafa; border-bottom:1px solid #ddd; }
 	#breadcrumbs a		{ color:#295578; font-weight:600; display:inline-block; }
 	
 .block								{ margin:0 auto 20px; background:#fff; border:1px solid #c1c1c1; }

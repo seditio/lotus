@@ -1,5 +1,4 @@
 <!-- BEGIN: LIST -->
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="block">
 					<h5>{PHP.L.Modules}</h5>
@@ -24,11 +23,9 @@
 					</table>
 				</div>
 			</div>
-		</div>
 <!-- END: LIST -->
 
 <!-- BEGIN: MAIN -->
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="block">
 					<h5>{PHP.L.Structure}</h5>
@@ -176,6 +173,5 @@
 
 				</div>
 			</div>
-		</div>
 		
 <!-- END: MAIN -->

@@ -1,5 +1,4 @@
 <!-- BEGIN: MAIN -->
-		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span4">
 					<div class="block">
@@ -73,5 +72,4 @@
 				</div>
 <!-- END: SECTION -->
 			</div>
-		</div>
 <!-- END: MAIN -->
