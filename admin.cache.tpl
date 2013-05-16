@@ -5,7 +5,7 @@
 			
 				<div class="block">
 					<h5>{PHP.L.adm_internalcache}</h5>
-					{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<p>
 						<a href="{ADMIN_CACHE_URL_REFRESH}" class="ajax btn btn-primary">{PHP.L.Refresh}</a>
 						<a href="{ADMIN_CACHE_URL_PURGE}" class="ajax btn btn-primary">{PHP.L.adm_purgeall}</a>

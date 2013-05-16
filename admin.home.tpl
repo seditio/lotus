@@ -16,7 +16,7 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
-{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 				</div>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 			<div class="row-fluid">
 				<div class="span4">
 					<div class="block">
-						<h5><i class="icon-magnet"></i> Cotonti:</h5>
+						<h5><i class="icon-code"></i> Cotonti:</h5>
 						<table class="table table-striped">
 							<tr>
 								<td>{PHP.L.Version}</td>

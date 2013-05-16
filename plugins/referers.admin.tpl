@@ -4,7 +4,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Referers}</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <!-- IF {PHP.usr.isadmin} -->
 						<p>
 							<a href="{ADMIN_REFERERS_URL_PRUNE}" class="btn btn-primary">{PHP.L.adm_purgeall}</a>

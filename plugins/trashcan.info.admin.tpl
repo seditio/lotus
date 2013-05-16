@@ -4,7 +4,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Trashcan}</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 						<p>
 							<a title="{PHP.L.Configuration}" href="{ADMIN_TRASHCAN_CONF_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
 							<a title="{PHP.L.Wipeall}" href="{ADMIN_TRASHCAN_WIPEALL_URL}" class="btn btn-danger"><i class="icon-remove"></i> {PHP.L.Wipeall}</a>

@@ -4,7 +4,7 @@
 				<div class="span6">
 					<div class="block">
 						<h5>{PHP.L.ipsearch_title}</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 						<h6>{PHP.L.ipsearch_dnsrecord}: {IPSEARCH_RES_DNS}</h6>
 <!-- BEGIN: IPSEARCH_RESULTS -->
 						<p>{PHP.L.ipsearch_found1} {IPSEARCH_TOTALMATCHES1} {PHP.L.ipsearch_found2} {IPSEARCH_IPMASK1}:</p>

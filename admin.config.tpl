@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
-{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <!-- BEGIN: EDIT -->
 					<div class="block">
 						<h5><i class="icon-cogs"></i> {PHP.L.Configuration}</h5>

@@ -5,7 +5,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Rights}</h5>
-						{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 						<form name="saverightsbyitem" id="saverightsbyitem" action="{ADMIN_RIGHTSBYITEM_FORM_URL}" method="post" class="ajax">
 							<table class="table table-bordered">
 								<thead>

@@ -4,7 +4,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Log} ({ADMIN_LOG_TOTALDBLOG})</h5>
-						{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 						<div class="clearfix">
 <!-- IF {PHP.usr.isadmin} -->
 							<a title="{PHP.L.adm_purgeall}" href="{ADMIN_LOG_URL_PRUNE}" class="ajax btn btn-danger"><i class="icon-remove"></i> {PHP.L.adm_purgeall}</a>

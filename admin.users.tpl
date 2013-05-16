@@ -5,7 +5,7 @@
 			
 				<div class="block">
 					<h5>{PHP.L.Users}</h5>
-					{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<p>
 						<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
 						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields_desc}</a>
@@ -25,14 +25,14 @@
 						<tbody>
 <!-- BEGIN: USERS_ROW -->
 							<tr>
-								<td class="centerall">
+								<td>
 								<!-- IF {PHP.hidden_groups} AND {ADMIN_USERS_ROW_GRP_HIDDEN} == Yes -->{PHP.R.admin_icon_usergroup0}<!-- ELSE -->{PHP.R.admin_icon_usergroup1}<!-- ENDIF -->
 								<!-- ENDIF -->
 								</td>
 								<td><a href="{ADMIN_USERS_ROW_GRP_TITLE_URL}" class="ajax" title="{PHP.L.Edit}">{ADMIN_USERS_ROW_GRP_NAME} (#{ADMIN_USERS_ROW_GRP_ID})</a></td>
-								<td class="centerall">{ADMIN_USERS_ROW_GRP_COUNT_MEMBERS}</td>
-								<td class="centerall">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
-								<td class="centerall action">
+								<td class="text-center">{ADMIN_USERS_ROW_GRP_COUNT_MEMBERS}</td>
+								<td class="text-center">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
+								<td class="text-center action">
 									<!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
 									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-primary btn-small"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
 									<!-- ENDIF -->

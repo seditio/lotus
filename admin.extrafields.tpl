@@ -6,7 +6,7 @@
 					<div class="block">
 						<h5>{PHP.L.adm_extrafields}</h5>
 
-{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 <!-- BEGIN: TABLELIST -->	
 						<table class="table table-bordered">

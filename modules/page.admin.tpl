@@ -16,7 +16,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Pages} ({ADMIN_PAGE_TOTALDBPAGES})</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 						<p>
 							<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
 							<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields_desc}</a>

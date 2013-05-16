@@ -4,7 +4,7 @@
 			<div class="row-fluid">
 				<div class="block">
 					<h5>Disk Cache</h5>
-{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<p>
 						<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax btn btn-primary"><i class="icon-refresh"></i> {PHP.L.Refresh}</a>
 						<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax btn btn-danger"><i class="icon-remove"></i> {PHP.L.adm_purgeall}</a>

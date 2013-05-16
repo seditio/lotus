@@ -5,7 +5,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Polls}</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 						<p>
 							<a title="{PHP.L.Configuration}" href="{ADMIN_POLLS_CONF_URL}" class="btn btn-primary">{PHP.L.Configuration}</a>
 						</p>

@@ -4,7 +4,7 @@
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.adm_urls_rules}</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <!-- BEGIN: HTA -->
 						<h6>{PHP.L.adm_urls_your} {ADMIN_URLS_CONF_NAME}</h6>
 						<pre class="code">{ADMIN_URLS_HTA}</pre>

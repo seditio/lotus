@@ -8,10 +8,10 @@
 					
 	<table class="table">
 		<tr>
-			<td class="coltop width15">{PHP.L.Date}</td>
-			<td class="coltop width20">{PHP.L.User}</td>
-			<td class="coltop width45">{PHP.L.Message}</td>
-			<td class="coltop width20">{PHP.L.Action}</td>
+			<td class="width15">{PHP.L.Date}</td>
+			<td class="width20">{PHP.L.User}</td>
+			<td class="width45">{PHP.L.Message}</td>
+			<td class="width20">{PHP.L.Action}</td>
 		 </tr>
 <!-- BEGIN: DATA -->
 		 <tr>

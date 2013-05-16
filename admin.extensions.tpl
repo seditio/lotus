@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 
-	{FILE "themes/admin/lotus/warnings.tpl"}
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 <!-- BEGIN: DEFAULT -->
 <p>

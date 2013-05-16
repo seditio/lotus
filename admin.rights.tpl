@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
-					{FILE "themes/admin/lotus/warnings.tpl"}
+					{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<form name="saverights" id="saverights" action="{ADMIN_RIGHTS_FORM_URL}" method="post" class="ajax">
 <!-- IF {PHP.g} > 5 -->
 						<table class="table table-bordered">

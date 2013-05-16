@@ -1,23 +1,22 @@
 <!-- BEGIN: MAIN -->
-
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
 					<div class="block">
 						<h5>{PHP.L.Ratings}</h5>
-						{FILE "{PHP.cfg.themes_dir}/admin/lotus/warnings.tpl"}
-						<p>
-							<a title="{PHP.L.Configuration}" href="{ADMIN_RATINGS_URL_CONFIG}" class="btn btn-primary">{PHP.L.Configuration}</a>
-						</p>
+						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
+						<p><a title="{PHP.L.Configuration}" href="{ADMIN_RATINGS_URL_CONFIG}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a></p>
 						<table class="table table-bordered">
-							<tr>
-								<td class="coltop width10">{PHP.L.adm_area}</td>
-								<td class="coltop width10">{PHP.L.Code}</td>
-								<td class="coltop width20">{PHP.L.Date} (GMT)</td>
-								<td class="coltop width20">{PHP.L.Votes}</td>
-								<td class="coltop width20">{PHP.L.Rating}</td>
-								<td class="coltop width20">{PHP.L.Action}</td>
-							</tr>
+							<thead>
+								<tr>
+									<th class="width10">{PHP.L.adm_area}</th>
+									<th class="width10">{PHP.L.Code}</th>
+									<th class="width20">{PHP.L.Date} (GMT)</th>
+									<th class="width20">{PHP.L.Votes}</th>
+									<th class="width20">{PHP.L.Rating}</th>
+									<th class="width20">{PHP.L.Action}</th>
+								</tr>
+							</thead>
 <!-- BEGIN: RATINGS_ROW -->
 							<tr>
 								<td class="textcenter">{ADMIN_RATINGS_ROW_RATING_AREA}</td>
@@ -32,12 +31,10 @@
 							</tr>
 <!-- END: RATINGS_ROW -->
 						</table>
-			
-			<p class="paging">{ADMIN_RATINGS_PAGINATION_PREV}{ADMIN_RATINGS_PAGNAV}{ADMIN_RATINGS_PAGINATION_NEXT}<span>{PHP.L.adm_ratings_totalitems}: {ADMIN_RATINGS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_RATINGS_ON_PAGE}</span><span>{PHP.L.adm_ratings_totalvotes}: {ADMIN_RATINGS_TOTALVOTES}</span></p>
-
+						<div class="pagination">{ADMIN_RATINGS_PAGINATION_PREV}{ADMIN_RATINGS_PAGNAV}{ADMIN_RATINGS_PAGINATION_NEXT}</div>
+						<p class="text-center">{PHP.L.adm_ratings_totalitems}: {ADMIN_RATINGS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_RATINGS_ON_PAGE} {PHP.L.adm_ratings_totalvotes}: {ADMIN_RATINGS_TOTALVOTES}</p>
 					</div>
 				</div>
 			</div>
 		</div>			
-			
 <!-- END: MAIN -->
