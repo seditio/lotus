@@ -64,14 +64,8 @@
 						<table class="table table-striped">
 <!-- BEGIN: ADMIN_CONFIG_ROW -->
 							<tr>
-								<td>
-<!-- IF {ADMIN_CONFIG_ROW_ICO} -->
-									<img src="{ADMIN_CONFIG_ROW_ICO}"/>
-<!-- ELSE -->
-									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>
-<!-- ENDIF -->
-								</td>
-								<td>
+								<td class="ext-cell">
+									<img src="<!-- IF {ADMIN_CONFIG_ROW_ICO} -->{ADMIN_CONFIG_ROW_ICO}<!-- ELSE -->{PHP.cfg.system_dir}/admin/img/plugins32.png<!-- ENDIF -->" alt="" class="visible-desktop" />
 									<a href="{ADMIN_CONFIG_ROW_URL}" class="ajax thumbicons large strong">{ADMIN_CONFIG_ROW_NAME}</a>
 									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 								</td>

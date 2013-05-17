@@ -1,7 +1,6 @@
 <!-- BEGIN: MAIN -->
 
 	<div class="container-fluid fixed">
-	
 		<div class="row-fluid">
 			<div class="span12">
 				<div id="topbar">
@@ -91,10 +90,14 @@
 			</div>
 			
 			<div class="miniwidget">
-				<strong>System Info:</strong>
+				<strong>Framework Info:</strong>
 				<ul class="unstyled">
 					<li>Версия: <span class="pull-right">0.9.13</span></li>
 					<li>База данных: <span class="pull-right">0.9.14-02</span></li>
+					<li>БД SQL, строк: <span class="pull-right">800</span></li>
+					<li>БД SQL, размер индекса (KB): <span class="pull-right">223.0</span></li>
+					<li>БД SQL, размер данных (KB): <span class="pull-right">56.7</span></li>
+					<li>БД SQL, общий размер (KB): <span class="pull-right">279.7</span></li>
 					<li>Плагины: <span class="pull-right">33</span></li>
 					<li>Хуки: <span class="pull-right">205</span></li>
 				</ul>

@@ -5,36 +5,36 @@
 						<h5>{PHP.L.Core}</h5>
 						<table class="table table-bordered">
 							<tr>
-								<td class="centerall"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/></td>
-								<td>
+								<td class="ext-cell">
+									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
 									<a class="large strong" href="{ADMIN_OTHER_URL_CACHE}">{PHP.L.adm_internalcache}</a>
 									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 								</td>
 							</tr>
 							<tr>
-								<td class="centerall"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/></td>
-								<td>
+								<td class="ext-cell">
+									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
 									<a class="large strong" href="{ADMIN_OTHER_URL_DISKCACHE}">{PHP.L.adm_diskcache}</a>
 									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 								</td>
 							</tr>
 							<tr>
-								<td class="centerall"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/></td>
-								<td>
+								<td class="ext-cell">
+									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
 									<a class="large strong" href="{ADMIN_OTHER_URL_EXFLDS}">{PHP.L.adm_extrafields}</a>
 									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 								</td>
 							</tr>			
 							<tr>
-								<td class="centerall"><img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/></td>
-								<td>
+								<td class="ext-cell">
+									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
 									<a class="large strong" href="{ADMIN_OTHER_URL_LOG}">{PHP.L.adm_log}</a>
 									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 								</td>
 							</tr>
 							<tr>
-								<td class="centerall"><img src="{PHP.cfg.system_dir}/admin/img/cfg_info.png"/></td>
-								<td>
+								<td class="ext-cell">
+									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
 									<a class="large strong" href="{ADMIN_OTHER_URL_INFOS}">{PHP.L.adm_infos}</a>
 									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 								</td>
@@ -49,14 +49,8 @@
 							<table class="table table-bordered">
 <!-- BEGIN: ROW -->
 								<tr>
-									<td class="centerall width10">
-										<!-- IF {ADMIN_OTHER_EXT_ICO} --> 
-										<img src="{ADMIN_OTHER_EXT_ICO}"/>
-										<!-- ELSE -->
-										<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png"/>
-										<!-- ENDIF -->
-									</td>
-									<td class="width90">
+									<td class="ext-cell">
+										<img src="<!-- IF {ADMIN_OTHER_EXT_ICO} -->{ADMIN_OTHER_EXT_ICO}<!-- ELSE -->{PHP.cfg.system_dir}/admin/img/plugins32.png<!-- ENDIF -->" alt="" class="visible-desktop" />
 										<a class="large strong" href="{ADMIN_OTHER_EXT_URL}">{ADMIN_OTHER_EXT_NAME}</a>
 										<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 									</td>
