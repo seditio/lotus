@@ -3,11 +3,10 @@
 				<div class="block">
 					<h5>Disk Cache</h5>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-					<p>
+					<div class="btn-group">
 						<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax btn btn-primary"><i class="icon-refresh"></i> {PHP.L.Refresh}</a>
 						<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax btn btn-danger"><i class="icon-remove"></i> {PHP.L.adm_purgeall}</a>
-					</p>
-
+					</div>
 					<table class="table table-bordered">
 						<thead>
 							<tr>
@@ -23,7 +22,7 @@
 							<td class="textcenter">{ADMIN_DISKCACHE_ITEM_NAME}</td>
 							<td class="textcenter">{ADMIN_DISKCACHE_FILES}</td>
 							<td class="textcenter">{ADMIN_DISKCACHE_SIZE}</td>
-							<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax btn btn-danger"><i class="icon-remove"></i> {PHP.L.Delete}</a></td>
+							<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax btn btn-danger btn-mini"><i class="icon-remove"></i> {PHP.L.Delete}</a></td>
 						</tr>
 <!-- END: ADMIN_DISKCACHE_ROW -->
 						</tbody>

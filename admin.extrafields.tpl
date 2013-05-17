@@ -15,7 +15,7 @@
 							</tr>
 							<!-- END: ROW -->
 						</table>
-						<p><a class="btn btn-primary" href="{ADMIN_EXTRAFIELDS_ALLTABLES}">{PHP.L.adm_extrafields_all}</a></p>
+						<div class="btn-group"><a class="btn btn-primary" href="{ADMIN_EXTRAFIELDS_ALLTABLES}">{PHP.L.adm_extrafields_all}</a></div>
 <!-- END: TABLELIST -->
 
 <script type="text/javascript">
@@ -207,7 +207,7 @@
 								</tr>
 								<tr>
 									<td class="valid" colspan="3">
-										<p class="small"><input type="checkbox" name="field_noalter" /> {PHP.L.adm_extrafield_noalter}</p>
+										<p class=""><input type="checkbox" name="field_noalter" /> {PHP.L.adm_extrafield_noalter}</p>
 										<button type="submit" class="confirm btn btn-primary">{PHP.L.Add}</button>
 									</td>
 								</tr>

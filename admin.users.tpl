@@ -3,10 +3,10 @@
 				<div class="block">
 					<h5>{PHP.L.Users}</h5>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-					<p>
+					<div class="btn-group">
 						<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
-						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields_desc}</a>
-					</p>
+						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-plus-sign"></i> {PHP.L.adm_extrafields_desc}</a>
+					</div>
 <!-- BEGIN: ADMIN_USERS_DEFAULT -->
 					<table class="table table-bordered">
 						<thead>
@@ -29,10 +29,12 @@
 								<td class="text-center">{ADMIN_USERS_ROW_GRP_COUNT_MEMBERS}</td>
 								<td class="text-center">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
 								<td class="text-center action">
+									<div class="btn-group">
 									<!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
-									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-primary btn-small"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
+									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-mini"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
 									<!-- ENDIF -->
-									<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn btn-primary btn-small"><i class="icon-folder-open"></i> {PHP.L.short_open}</a>
+									<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.short_open}</a>
+									</div>
 								</td>
 							</tr>
 <!-- END: USERS_ROW -->

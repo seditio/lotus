@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-			<div class="row-fluid">
+			<div id="admin-other" class="row-fluid">
 				<div class="span4">
 					<div class="block">
 						<h5>{PHP.L.Core}</h5>

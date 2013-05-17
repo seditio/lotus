@@ -1,28 +1,112 @@
 <!-- BEGIN: MAIN -->
 
-	<div class="container-fluid">
-	<div id="wrap">
+	<div class="container-fluid fixed">
 	
 		<div class="row-fluid">
 			<div class="span12">
 				<div id="topbar">
-					<button class="btn btn-navbar">
-						<i class="icon-reorder"></i>
-					</button>
-					<ul class="pull-right">
+					<ul id="layout">
+						<li id="hdm"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-horizontal"></i> <span>Hide Menu</span></a></li>
+						<li id="hdn"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-vertical"></i> <span>Hide Nav</span></a></li>
+						<li id="str"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-fullscreen"></i> <span>Stretch</span></a></li>
+					</ul>
+					<ul id="settings">
 						<li>
-							<a href="{PHP.cfg.mainurl}" title="{PHP.L.hea_viewsite}" id="home">
-								<!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle} <!-- ELSE -->{PHP.L.hea_viewsite} <!-- ENDIF -->
+							<a href="{PHP.cfg.mainurl}" title="{PHP.L.hea_viewsite}" class="btn btn-mini btn-block disabled">
+								<i class="icon-external-link"></i> <span><!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle}<!-- ELSE -->{PHP.L.hea_viewsite}</span><!-- ENDIF -->
 							</a>
 						</li>
-						<li><a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></li>
-						<li>{PHP.out.loginout}</li>
+						<li>
+							<a href="{PHP|cot_url('users','m=profile')}" class="btn btn-mini btn-block disabled">
+								<i class="icon-user"></i> <span>{PHP.usr.name}</span>
+							</a>
+						</li>
+						<li class="loginout">{PHP.out.loginout}</li>
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div>	
+	
+	<div id="wrapper">
+	
+		<div id="sidebar">
+		
+			<a href="{PHP|cot_url('admin')}" id="logo">Dashboard</a>
+			<div id="profile">
+				<p>Welcome, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></p>
+				<i class="icon-user icon-3x icon-border pull-left"></i>
+				<ul>
+					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=profile')}"><i class="icon-user"></i> {PHP.L.Profile}</a></li>
+					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=details')}"><i class="icon-file-alt"></i> {PHP.L.Page}</a></li>
+					<li class="loginout">{PHP.out.loginout}</li>
+				</ul>
+			</div>
+			
+			<div id="menu" class="accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#general">
+							<i class="icon-cogs"></i> {PHP.L.home_ql_b1_title}
+						</a>
+					</div>
+					<div id="general" class="accordion-body collapse in">
+						<ul class="accordion-inner">
+							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
+							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
+							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a></li>
+							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=menus')}">{PHP.L.home_ql_b1_4}</a></li>
+							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a></li>
+							<li><a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#pages">
+							<i class="icon-copy"></i> {PHP.L.Pages}
+						</a>
+					</div>
+					<div id="pages" class="accordion-body collapse">
+						<ul class="accordion-inner">
+							<li><a href="{ADMIN_HOME_URL}">{PHP.L.adm_valqueue}: {ADMIN_HOME_PAGESQUEUED}</a></li>
+							<li><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
+							<li><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#users">
+							<i class="icon-user-md"></i> {PHP.L.Users}
+						</a>
+					</div>
+					<div id="users" class="accordion-body collapse">
+						<ul class="accordion-inner">
+							<li><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=core&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
+							<li><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
+							<li><a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="miniwidget">
+				<strong>System Info:</strong>
+				<ul class="unstyled">
+					<li>Версия: <span class="pull-right">0.9.13</span></li>
+					<li>База данных: <span class="pull-right">0.9.14-02</span></li>
+					<li>Плагины: <span class="pull-right">33</span></li>
+					<li>Хуки: <span class="pull-right">205</span></li>
+				</ul>
+			</div>
+			
+			<hr>
 
-		<div class="row-fluid">
+		</div>
+	
+		<div id="content">
+	
+		<div class="row-fluid hidden-phone">
 			<div class="span12">
 				<div id="breadcrumbs">
 					{ADMIN_TITLE}
@@ -97,6 +181,8 @@
 
 <!-- END: BODY -->
 
+	</div>
+	
 	</div>
 	
 	</div>

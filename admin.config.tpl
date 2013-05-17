@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
 
-			<div class="row-fluid">
-				<div class="span12">
+			<div id="admin-config" class="row-fluid">
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <!-- BEGIN: EDIT -->
+				<div class="span12">
 					<div class="block">
 						<h5><i class="icon-cogs"></i> {PHP.L.Configuration}</h5>
 						{ADMIN_CONFIG_EDIT_CUSTOM}
@@ -32,7 +32,7 @@
 										<div class="adminconfigmore">{ADMIN_CONFIG_ROW_CONFIG_MORE}</div>
 									</td>
 									<td class="text-center">
-										<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-warning">
+										<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-success btn-mini">
 											<i class="icon-refresh"></i> {PHP.L.Reset}
 										</a>
 									</td>
@@ -52,6 +52,7 @@
 							</table>
 						</form>
 					</div>
+				</div>
 <!-- END: EDIT -->
 
 <!-- BEGIN: DEFAULT -->
@@ -63,7 +64,7 @@
 						<table class="table table-striped">
 <!-- BEGIN: ADMIN_CONFIG_ROW -->
 							<tr>
-								<td class="hidden-tablet">
+								<td>
 <!-- IF {ADMIN_CONFIG_ROW_ICO} -->
 									<img src="{ADMIN_CONFIG_ROW_ICO}"/>
 <!-- ELSE -->
@@ -83,7 +84,6 @@
 
 <!-- END: DEFAULT -->
 
-				</div>
 			</div>
 		
 <!-- END: MAIN -->

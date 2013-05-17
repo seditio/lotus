@@ -4,9 +4,9 @@
 					<div class="block">
 						<h5>{PHP.L.Polls}</h5>
 						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-						<p>
-							<a title="{PHP.L.Configuration}" href="{ADMIN_POLLS_CONF_URL}" class="btn btn-primary">{PHP.L.Configuration}</a>
-						</p>
+						<div class="btn-group">
+							<a title="{PHP.L.Configuration}" href="{ADMIN_POLLS_CONF_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
+						</div>
 						<h6>{PHP.L.poll}:</h6>
 						
 						<select name="jumpbox" size="1" onchange="redirect(this)" class="marginbottom10 margintop10">
@@ -31,16 +31,18 @@
 								<td class="text-center">{ADMIN_POLLS_ROW_POLL_TYPE}</td>
 								<td class="text-center">{ADMIN_POLLS_ROW_POLL_LOCKED}<a href="{ADMIN_POLLS_ROW_POLL_URL}">{ADMIN_POLLS_ROW_POLL_TEXT}</a></td>
 								<td class="text-center">{ADMIN_POLLS_ROW_POLL_TOTALVOTES}</td>
-								<td class="action text-center">
+								<td class="action centerall">
+									<div class="btn-group">
 									<!-- IF !{ADMIN_POLLS_ROW_POLL_LOCKED} -->
-									<a title="{PHP.L.Lock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-warning btn-small"><i class="icon-ban-circle"></i> {PHP.L.Lock}</a>
+									<a title="{PHP.L.Lock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-mini"><i class="icon-ban-circle"></i> {PHP.L.Lock}</a>
 									<!-- ELSE -->
-									<a title="{PHP.L.Unlock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-danger btn-small"><i class="icon-ok-circle"></i> {PHP.L.Unlock}</a>
+									<a title="{PHP.L.Unlock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-mini"><i class="icon-ok-circle"></i> {PHP.L.Unlock}</a>
 									<!-- ENDIF -->
-									<a title="{PHP.L.Delete}" href="{ADMIN_POLLS_ROW_POLL_URL_DEL}" class="btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Delete}</a>
-									<a title="{PHP.L.Reset}" href="{ADMIN_POLLS_ROW_POLL_URL_RES}" class="btn btn-primary btn-small"><i class="icon-refresh"></i> {PHP.L.Reset}</a>
-									<a title="{PHP.L.adm_polls_bump}" href="{ADMIN_POLLS_ROW_POLL_URL_BMP}" class="btn btn-primary btn-small"><i class="icon-arrow-up"></i> {PHP.L.adm_polls_bump}</a>
-									<a title="{PHP.L.Open}" href="{ADMIN_POLLS_ROW_POLL_URL_OPN}" class="btn btn-success btn-small"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+									<a title="{PHP.L.Delete}" href="{ADMIN_POLLS_ROW_POLL_URL_DEL}" class="btn btn-mini"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+									<a title="{PHP.L.Reset}" href="{ADMIN_POLLS_ROW_POLL_URL_RES}" class="btn btn-mini"><i class="icon-refresh"></i> {PHP.L.Reset}</a>
+									<a title="{PHP.L.adm_polls_bump}" href="{ADMIN_POLLS_ROW_POLL_URL_BMP}" class="btn btn-mini"><i class="icon-arrow-up"></i> {PHP.L.adm_polls_bump}</a>
+									<a title="{PHP.L.Open}" href="{ADMIN_POLLS_ROW_POLL_URL_OPN}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+									</div>
 								</td>
 							</tr>
 							<!-- END: POLLS_ROW -->

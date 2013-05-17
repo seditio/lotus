@@ -25,9 +25,11 @@
 								<td class="text-center">{ADMIN_COMMENTS_AUTHOR}</td>
 								<td class="text-center">{ADMIN_COMMENTS_DATE}</td>
 								<td>{ADMIN_COMMENTS_TEXT}</td>
-								<td class="text-center action">
-									<a title="{PHP.L.Open}" href="{ADMIN_COMMENTS_URL}" class="btn btn-success btn-small"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
-									<a title="{PHP.L.Delete}" href="{ADMIN_COMMENTS_ITEM_DEL_URL}" class="ajax btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+								<td class="action centerall">
+									<div class="btn-group">
+										<a title="{PHP.L.Open}" href="{ADMIN_COMMENTS_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+										<a title="{PHP.L.Delete}" href="{ADMIN_COMMENTS_ITEM_DEL_URL}" class="ajax btn btn-mini"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+									</div>
 								</td>
 							</tr>
 <!-- END: ADMIN_COMMENTS_ROW -->

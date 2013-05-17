@@ -1,5 +1,31 @@
 $().ready(function() {
 
+	$('#topbar .btn-navbar').click(function()
+	{
+		$('.container-fluid:first').toggleClass('menu-hidden');
+		$('#menu').toggleClass('hidden-phone');
+	});
+
+	$('#hdm a').click(function()
+	{
+		$('.container-fluid:first').toggleClass('menu-hidden');
+		$('#menu').toggleClass('hidden-phone');
+		return false;
+	});
+	$('#str a').click(function()
+	{
+		$('.container-fluid:first').toggleClass('fixed');
+		return false;
+	});
+	
+	$('#hdn a').click(function()
+	{
+		$('nav div.row-fluid').toggleClass('hide');
+		return false;
+	});
+	
+	$('li.loginout a').prepend('<i class="icon-lock" /> ').addClass('btn btn-mini btn-block disabled');
+
 	$('div.block').each(function(){
 		$(this).children(':gt(0)').wrapAll('<div class="wrapper" />');
 	});
