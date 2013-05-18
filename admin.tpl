@@ -108,7 +108,7 @@
 			</div>
 			
 			<div class="miniwidget">
-				<strong>Framework Info:</strong>
+				<strong>Cotonti Siena Info:</strong>
 				<ul class="unstyled">
 					<li>Версия: <span class="pull-right">0.9.13</span></li>
 					<li>База данных: <span class="pull-right">0.9.14-02</span></li>
