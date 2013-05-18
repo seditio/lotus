@@ -7,11 +7,11 @@
 <!-- BEGIN: DEFAULT -->
 				<div class="block">
 					<h5>Extensions Control</h5>
-					<div class="btn-group">
-						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="icon-font"></i> {PHP.L.adm_sort_alphabet}</a>
-						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}"><i class="icon-sitemap"></i> {PHP.L.adm_sort_category}</a>
-						<a class="btn btn-success <!-- IF {ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->special" href="{ADMIN_EXTENSIONS_ALL_EXTENSIONS_URL}"<!-- ELSE-->" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ENDIF -->><i class="icon-ok-circle"></i> {PHP.L.adm_only_installed}</a>
-						<a class="btn btn-primary" href="{ADMIN_EXTENSIONS_HOOKS_URL}"><i class="icon-code"></i> {PHP.L.Hooks}</a>
+					<div class="btn-group item-control">
+						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="icon-font"></i> <span>{PHP.L.adm_sort_alphabet}</span></a>
+						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}"><i class="icon-sitemap"></i> <span>{PHP.L.adm_sort_category}</span></a>
+						<a class="btn btn-success <!-- IF {ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->special" href="{ADMIN_EXTENSIONS_ALL_EXTENSIONS_URL}"<!-- ELSE-->" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ENDIF -->><i class="icon-ok-circle"></i> <span>{PHP.L.adm_only_installed}</span></a>
+						<a class="btn btn-primary" href="{ADMIN_EXTENSIONS_HOOKS_URL}"><i class="icon-code"></i> <span>{PHP.L.Hooks}</span></a>
 					</div>
 				</div>
 
@@ -21,7 +21,6 @@
 		<table class="table table-bordered table-hover">
 			<thead>
 				<tr>
-					<th>&nbsp;</th>
 					<th>{PHP.L.Name} {PHP.L.adm_clicktoedit}</th>
 					<th>{PHP.L.Code}</th>
 					<th>{PHP.L.Version}</th>
@@ -33,7 +32,7 @@
 <!-- BEGIN: ROW -->
 <!-- BEGIN: ROW_CAT -->
 			<tr>
-				<td colspan="7">
+				<td colspan="6">
 					<h4>{ADMIN_EXTENSIONS_CAT_TITLE}</h4>
 				</td>
 			</tr>
@@ -45,16 +44,10 @@
 			</tr>
 <!-- END: ROW_ERROR_EXT -->
 			<tr>
-				<td>
-					<!-- IF {ADMIN_EXTENSIONS_ICO} -->
-					<img src="{ADMIN_EXTENSIONS_ICO}" />
-					<!-- ELSE -->
-					<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" />
-					<!-- ENDIF -->
-				</td>
-				<td>
-					<a class="large strong" href="{ADMIN_EXTENSIONS_DETAILS_URL}">{ADMIN_EXTENSIONS_NAME}</a>
-					<p class="small">{ADMIN_EXTENSIONS_DESCRIPTION|cot_cutstring($this,60)}</p>
+				<td class="ext-cell">
+					<img src="<!-- IF {ADMIN_EXTENSIONS_ICO} -->{ADMIN_EXTENSIONS_ICO}<!-- ELSE -->{PHP.cfg.system_dir}/admin/img/plugins32.png<!-- ENDIF -->" alt="" />
+					<a href="{ADMIN_EXTENSIONS_DETAILS_URL}">{ADMIN_EXTENSIONS_NAME}</a>
+					<p>{ADMIN_EXTENSIONS_DESCRIPTION|cot_cutstring($this,60)}</p>
 				</td>
 				<td class="centerall">{ADMIN_EXTENSIONS_CODE_X}</td>
 				<td class="centerall">
@@ -69,19 +62,19 @@
 				<td class="action centerall">
 					<div class="btn-group">
 <!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} -->
-					<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="btn btn-mini"><i class="icon-cog"></i> {PHP.L.short_config}</a>
+					<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="btn btn-small"><i class="icon-cog"></i> <span>{PHP.L.short_config}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifstruct} -->
-					<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn btn-mini"><i class="icon-sitemap"></i> {PHP.L.short_struct}</a>
+					<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn btn-small"><i class="icon-sitemap"></i> <span>{PHP.L.short_struct}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.totalinstalled} -->
-					<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="btn btn-mini"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
+					<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="btn btn-small"><i class="icon-lock"></i> <span>{PHP.L.short_rights}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifthistools} -->
-					<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn btn-mini"><i class="icon-user"></i> {PHP.L.short_admin}</a>
+					<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn btn-small"><i class="icon-user"></i> <span>{PHP.L.short_admin}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.if_plg_standalone} -->
-					<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+					<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
 <!-- ENDIF -->
 					</div>
 				</td>

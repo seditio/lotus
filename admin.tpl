@@ -30,13 +30,14 @@
 	
 		<div id="sidebar">
 		
-			<a href="{PHP|cot_url('admin')}" id="logo">Dashboard</a>
+			<a href="{PHP|cot_url('admin')}" id="logo">Cotonti Siena Dashboard</a>
 			<div id="profile">
 				<p>Welcome, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></p>
 				<i class="icon-user icon-3x icon-border pull-left"></i>
 				<ul>
-					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=profile')}"><i class="icon-user"></i> {PHP.L.Profile}</a></li>
+					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=profile')}"><i class="icon-user-md"></i> {PHP.L.Profile}</a></li>
 					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=details')}"><i class="icon-file-alt"></i> {PHP.L.Page}</a></li>
+					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('pm','')}"><i class="icon-comment-alt"></i> {PHP.L.Private_Messages}</a></li>
 					<li class="loginout">{PHP.out.loginout}</li>
 				</ul>
 			</div>

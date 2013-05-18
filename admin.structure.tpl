@@ -97,8 +97,8 @@
 						<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_CODE}</td>
 						<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_TITLE}</td>
 						<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_TPLQUICK}</td>
-						<td class="text-center {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_COUNT}</td>
-						<td class="action {ADMIN_STRUCTURE_ODDEVEN} text-center">
+						<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_COUNT}</td>
+						<td class="action {ADMIN_STRUCTURE_ODDEVEN} centerall">
 							<div class="btn-group">
 							<a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.Config}" class="btn btn-mini"><i class="icon-cog"></i> {PHP.L.short_config}</a>
 							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a title="{PHP.L.Rights}" href="{ADMIN_STRUCTURE_RIGHTS_URL}" class="btn btn-mini"><i class="icon-lock"></i> {PHP.L.short_rights}</a><!-- ENDIF -->

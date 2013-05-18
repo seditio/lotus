@@ -4,7 +4,9 @@
 					<div class="block">
 						<h5>{PHP.L.comments_comments}</h5>
 						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-						<p><a title="{PHP.L.Configuration}" href="{ADMIN_COMMENTS_CONFIG_URL}" class="btn btn-primary">{PHP.L.Configuration}</a></p>
+						<div class="btn-group item-control">
+							<a title="{PHP.L.Configuration}" href="{ADMIN_COMMENTS_CONFIG_URL}" class="btn btn-primary"><i class="icon-cog"></i> <span>{PHP.L.Configuration}</span></a>
+						</div>
 						<table class="table table-bordered">
 							<thead>
 								<tr>
@@ -27,8 +29,8 @@
 								<td>{ADMIN_COMMENTS_TEXT}</td>
 								<td class="action centerall">
 									<div class="btn-group">
-										<a title="{PHP.L.Open}" href="{ADMIN_COMMENTS_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
-										<a title="{PHP.L.Delete}" href="{ADMIN_COMMENTS_ITEM_DEL_URL}" class="ajax btn btn-mini"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+										<a title="{PHP.L.Open}" href="{ADMIN_COMMENTS_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
+										<a title="{PHP.L.Delete}" href="{ADMIN_COMMENTS_ITEM_DEL_URL}" class="ajax btn btn-mini"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></a>
 									</div>
 								</td>
 							</tr>

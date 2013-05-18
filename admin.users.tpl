@@ -11,29 +11,28 @@
 					<table class="table table-bordered">
 						<thead>
 							<tr>
-								<th class="width5">&nbsp;</th>
-								<th class="width35">{PHP.L.Groups}</th>
-								<th class="width20">{PHP.L.Members}</th>
-								<th class="width20">{PHP.L.Enabled}</th>
-								<th class="width20">{PHP.L.Action}</th>
+								<th class="width50">{PHP.L.Groups}</th>
+								<th class="width10">{PHP.L.Members}</th>
+								<th class="width10">{PHP.L.Enabled}</th>
+								<th class="width30">{PHP.L.Action}</th>
 							</tr>
 						</thead>
 						<tbody>
 <!-- BEGIN: USERS_ROW -->
 							<tr>
-								<td>
-								<!-- IF {PHP.hidden_groups} AND {ADMIN_USERS_ROW_GRP_HIDDEN} == Yes -->{PHP.R.admin_icon_usergroup0}<!-- ELSE -->{PHP.R.admin_icon_usergroup1}<!-- ENDIF -->
-								<!-- ENDIF -->
+								<td class="ext-cell">
+									<!-- IF {PHP.hidden_groups} AND {ADMIN_USERS_ROW_GRP_HIDDEN} == Yes -->{PHP.R.admin_icon_usergroup0}<!-- ELSE -->{PHP.R.admin_icon_usergroup1}<!-- ENDIF -->
+									<a href="{ADMIN_USERS_ROW_GRP_TITLE_URL}" class="ajax" title="{PHP.L.Edit}">{ADMIN_USERS_ROW_GRP_NAME} (#{ADMIN_USERS_ROW_GRP_ID})</a>
+									<p>{ADMIN_USERS_ROW_GRP_DESC}</p>
 								</td>
-								<td><a href="{ADMIN_USERS_ROW_GRP_TITLE_URL}" class="ajax" title="{PHP.L.Edit}">{ADMIN_USERS_ROW_GRP_NAME} (#{ADMIN_USERS_ROW_GRP_ID})</a></td>
-								<td class="text-center">{ADMIN_USERS_ROW_GRP_COUNT_MEMBERS}</td>
-								<td class="text-center">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
-								<td class="text-center action">
+								<td class="centerall">{ADMIN_USERS_ROW_GRP_COUNT_MEMBERS}</td>
+								<td class="centerall">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
+								<td class="action centerall">
 									<div class="btn-group">
 									<!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
-									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-mini"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
+									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-small"><i class="icon-lock"></i> <span>{PHP.L.short_rights}</span></a>
 									<!-- ENDIF -->
-									<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.short_open}</a>
+									<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.short_open}</span></a>
 									</div>
 								</td>
 							</tr>

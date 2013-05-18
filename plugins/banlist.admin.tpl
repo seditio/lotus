@@ -20,10 +20,12 @@
 								<td class="text-center">{ADMIN_BANLIST_ROW_IP}</td>
 								<td class="text-center">{ADMIN_BANLIST_ROW_EMAIL}</td>
 								<td class="text-center">{ADMIN_BANLIST_ROW_REASON}</td>
-								<td class="text-center">{ADMIN_BANLIST_ROW_EXPIRE}</td>
-								<td class="text-center">
-									<button type="submit" class="btn btn-primary btn-small"><i class="icon-refresh"></i> {PHP.L.Update}</button>
-									<button type="submit" onclick="parent.location='{ADMIN_BANLIST_ROW_DELURL}'" class="btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Delete}</button>
+								<td class="centerall">{ADMIN_BANLIST_ROW_EXPIRE}</td>
+								<td class="action centerall">
+									<div class="btn-group">
+										<button type="submit" class="btn btn-small"><i class="icon-refresh"></i> <span>{PHP.L.Update}</span></button>
+										<button type="submit" onclick="parent.location='{ADMIN_BANLIST_ROW_DELURL}'" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></button>
+									</div>
 								</td>
 							</tr>
 							</form>
