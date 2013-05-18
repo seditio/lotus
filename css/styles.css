@@ -3,14 +3,14 @@
 /* 1. Elements
 -------------------------------------------------- */
 
-body					{ color:#7c7c7c; font-family:'Open Sans', sans-serif; font-size:13px; background:#fff; }
+body						{ color:#7c7c7c; font-family:'Open Sans', sans-serif; font-size:13px; min-height:100%; background:#fff; }
 
 /* 2. Structure
 -------------------------------------------------- */
 
 #wrapper								{ width:100%; float:left; overflow:hidden; position:relative; }
 
-#sidebar								{ margin-bottom:-99999px; padding-bottom:99999px; width:229px; background:#eee; border-right:1px solid #d8d8d8; float:left; position:absolute; top:0; left:0; }
+#sidebar								{ margin-bottom:-99999px; padding-bottom:99999px; width:229px; background:#eee; border-right:1px solid #d8d8d8; float:left; }
 	#sidebar a#logo						{ font-size:15px; font-weight:700; text-align:center; text-shadow:0 1px 0 #fff; line-height:38px; padding:0 10px; height:38px; background:#fff; display:block; }
 	#sidebar a#logo:hover				{ text-decoration:none; }
 	#sidebar div#profile					{ padding:5px 15px; background:#fff; border-top:1px solid #dadada; border-bottom:1px solid #d8d8d8; overflow:hidden; }
@@ -41,7 +41,7 @@ body					{ color:#7c7c7c; font-family:'Open Sans', sans-serif; font-size:13px; b
 	.miniwidget ul						{ font-size:11px; font-weight:100; text-shadow:0 1px 0 #fff; margin:0; }
 	.miniwidget ul li						{ padding:2px 0 3px; border-bottom:1px dotted #ccc; }
 	
-#content								{ margin:0 0 0 230px; padding:0 15px; background:#fff; overflow:hidden; position:relative; }
+#content								{ padding:0 15px; background:#fff; overflow:hidden; position:relative; }
 
 .container-fluid.menu-hidden #sidebar			{ display:none; }
 .container-fluid.menu-hidden #content			{ margin:0; }
@@ -77,7 +77,7 @@ select#selectmenu		{ width:100%; display:none; }
 	#breadcrumbs a		{ color:#295578; font-weight:600; display:inline-block; }
 	
 .block								{ margin:0 auto 20px; background:#fff; border:1px solid #c1c1c1; }
-	.block h5						{ line-height:40px; margin:0; padding:0 15px; background:linear-gradient(to bottom, #f8f8f8, #ededed); border-bottom:1px solid #c1c1c1; }
+	.block h5						{ line-height:20px; margin:0; padding:10px 15px; background-color:#f4f4f4; background-image:linear-gradient(to bottom, #f8f8f8, #ededed); border-bottom:1px solid #c1c1c1; box-shadow:0 1px 0 0 #f7f7f7, 0 5px 4px -4px #d8d8d8; }
 	.block .wrapper					{ padding:15px 15px 0; }
 
 	.block							{ *zoom:1; }
