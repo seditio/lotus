@@ -31,10 +31,12 @@
 										{ADMIN_CONFIG_ROW_CONFIG}
 										<div class="adminconfigmore">{ADMIN_CONFIG_ROW_CONFIG_MORE}</div>
 									</td>
-									<td class="text-center">
-										<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-success btn-mini">
-											<i class="icon-refresh"></i> {PHP.L.Reset}
-										</a>
+									<td class="action centerall">
+										<div class="btn-group">
+											<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-success btn-mini">
+												<i class="icon-refresh"></i> <span>{PHP.L.Reset}</span>
+											</a>
+										</div>
 									</td>
 								</tr>
 <!-- END: ADMIN_CONFIG_ROW_OPTION -->

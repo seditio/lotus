@@ -31,7 +31,7 @@ label input[type=radio]	{ margin:-4px 0 0 0; }
 .btn-group				{ margin-bottom:15px; }
 .icon-li				{ margin-right:5px; }
 
-.btn.disabled				{ cursor:pointer; }
+.btn.disabled				{ color:#000; cursor:pointer; }
 	ul .btn.disabled			{ text-align:left; padding:0 10px; }
 	ul .btn.disabled:hover	{ border-color:#999; }
 	ul .btn.disabled i			{ margin-right:2px; }

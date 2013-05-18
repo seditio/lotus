@@ -46,17 +46,17 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#mainnav">
-							<i class="icon-cogs"></i> Main Navigation
+							<i class="icon-dashboard"></i> Main Navigation
 						</a>
 					</div>
 					<div id="mainnav" class="accordion-body collapse in">
 						<ul class="accordion-inner">
-							<li><a href="{PHP|cot_url('admin')}">{PHP.L.Home}</a></li>
-							<li><a href="{PHP|cot_url('admin', 'm=config')}">{PHP.L.Configuration}</a></li>
-							<li><a href="{PHP|cot_url('admin', 'm=structure')}">{PHP.L.Structure}</a></li>
-							<li><a href="{PHP|cot_url('admin', 'm=extensions')}">{PHP.L.Extensions}</a></li>
-							<li><a href="{PHP|cot_url('admin', 'm=users')}">{PHP.L.Users}</a></li>
-							<li><a href="{PHP|cot_url('admin', 'm=other')}">{PHP.L.Other}</a></li>
+							<li><i class="icon-li icon-home"></i><a href="{PHP|cot_url('admin')}">{PHP.L.Home}</a></li>
+							<li><i class="icon-li icon-cog"></i><a href="{PHP|cot_url('admin', 'm=config')}">{PHP.L.Configuration}</a></li>
+							<li><i class="icon-li icon-sitemap"></i><a href="{PHP|cot_url('admin', 'm=structure')}">{PHP.L.Structure}</a></li>
+							<li><i class="icon-li icon-puzzle-piece"></i><a href="{PHP|cot_url('admin', 'm=extensions')}">{PHP.L.Extensions}</a></li>
+							<li><i class="icon-li icon-user"></i><a href="{PHP|cot_url('admin', 'm=users')}">{PHP.L.Users}</a></li>
+							<li><i class="icon-li icon-wrench"></i><a href="{PHP|cot_url('admin', 'm=other')}">{PHP.L.Other}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -68,12 +68,12 @@
 					</div>
 					<div id="general" class="accordion-body collapse">
 						<ul class="accordion-inner">
-							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
-							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
-							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a></li>
-							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=menus')}">{PHP.L.home_ql_b1_4}</a></li>
-							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a></li>
-							<li><a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a></li>
+							<li><i class="icon-li icon-cog"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
+							<li><i class="icon-li icon-code"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
+							<li><i class="icon-li icon-adjust"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a></li>
+							<li><i class="icon-li icon-tasks"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=menus')}">{PHP.L.home_ql_b1_4}</a></li>
+							<li><i class="icon-li icon-globe"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a></li>
+							<li><i class="icon-li icon-reorder"></i><a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -85,9 +85,9 @@
 					</div>
 					<div id="pages" class="accordion-body collapse">
 						<ul class="accordion-inner">
-							<li><a href="{ADMIN_HOME_URL}">{PHP.L.adm_valqueue}: {ADMIN_HOME_PAGESQUEUED}</a></li>
-							<li><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
-							<li><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
+							<li><i class="icon-li icon-ban-circle"></i><a href="{ADMIN_HOME_URL}">{PHP.L.adm_valqueue}: {PHP.pagesqueued}</a></li>
+							<li><i class="icon-li icon-plus-sign"></i><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
+							<li><i class="icon-li icon-reorder"></i><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -99,9 +99,9 @@
 					</div>
 					<div id="users" class="accordion-body collapse">
 						<ul class="accordion-inner">
-							<li><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=core&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
-							<li><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
-							<li><a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a></li>
+							<li><i class="icon-li icon-cog"></i><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=core&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
+							<li><i class="icon-li icon-reorder"></i><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
+							<li><i class="icon-li icon-lock"></i><a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a></li>
 						</ul>
 					</div>
 				</div>
