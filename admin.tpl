@@ -6,7 +6,7 @@
 				<div id="topbar">
 					<ul id="layout">
 						<li id="hdm"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-horizontal"></i> <span>Hide Menu</span></a></li>
-						<li id="hdn"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-vertical"></i> <span>Hide Nav</span></a></li>
+						<li id="hdn"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-vertical"></i> <span>Show Nav</span></a></li>
 						<li id="str"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-fullscreen"></i> <span>Stretch</span></a></li>
 					</ul>
 					<ul id="settings">
@@ -45,11 +45,28 @@
 			<div id="menu" class="accordion">
 				<div class="accordion-group">
 					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#mainnav">
+							<i class="icon-cogs"></i> Main Navigation
+						</a>
+					</div>
+					<div id="mainnav" class="accordion-body collapse in">
+						<ul class="accordion-inner">
+							<li><a href="{PHP|cot_url('admin')}">{PHP.L.Home}</a></li>
+							<li><a href="{PHP|cot_url('admin', 'm=config')}">{PHP.L.Configuration}</a></li>
+							<li><a href="{PHP|cot_url('admin', 'm=structure')}">{PHP.L.Structure}</a></li>
+							<li><a href="{PHP|cot_url('admin', 'm=extensions')}">{PHP.L.Extensions}</a></li>
+							<li><a href="{PHP|cot_url('admin', 'm=users')}">{PHP.L.Users}</a></li>
+							<li><a href="{PHP|cot_url('admin', 'm=other')}">{PHP.L.Other}</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#general">
 							<i class="icon-cogs"></i> {PHP.L.home_ql_b1_title}
 						</a>
 					</div>
-					<div id="general" class="accordion-body collapse in">
+					<div id="general" class="accordion-body collapse">
 						<ul class="accordion-inner">
 							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
 							<li><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
@@ -120,7 +137,7 @@
 
 		<nav>
 			<h1>Section Name</h1>
-			<div class="row-fluid">
+			<div class="row-fluid hide">
 				<div class="span2">
 					<a href="{PHP|cot_url('admin')}" class="<!-- IF !{PHP.m} -->sel<!-- ENDIF -->" title="{PHP.L.Administration}">
 						<i class="icon-dashboard"></i>
