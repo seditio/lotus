@@ -41,9 +41,11 @@
 												<option<!-- IF {CROP} == '16:10' --> selected="selected"<!-- ENDIF --> value="16:10">16:10</option>
 											</select>
 										</td>
-										<td class="replaceLink">
-											<button class="btn btn-primary" type="submit">{PHP.L.Update}</button>
-											{REMOVE}
+										<td class="action centerall replaceLink">
+											<div class="btn-group">
+												<button class="btn btn-small" type="submit"><i class="icon-refresh"></i> <span>{PHP.L.Update}</span></button>
+												{REMOVE}
+											</div>
 										</td>
 									</tr>
 								</form>
@@ -74,7 +76,9 @@
 												<option value="16:10">16:10</option>
 											</select>
 										</td>
-										<td><button type="submit" class="btn btn-primary">{PHP.L.Add}</button></td>
+										<td class="action centerall">
+											<button type="submit" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Add}</span></button>
+										</td>
 									<tr>
 								</form>
 							</tfoot>

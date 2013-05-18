@@ -29,8 +29,8 @@
 								<td>{ADMIN_COMMENTS_TEXT}</td>
 								<td class="action centerall">
 									<div class="btn-group">
-										<a title="{PHP.L.Open}" href="{ADMIN_COMMENTS_URL}" class="btn btn-mini"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
-										<a title="{PHP.L.Delete}" href="{ADMIN_COMMENTS_ITEM_DEL_URL}" class="ajax btn btn-mini"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></a>
+										<a title="{PHP.L.Open}" href="{ADMIN_COMMENTS_URL}" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
+										<a title="{PHP.L.Delete}" href="{ADMIN_COMMENTS_ITEM_DEL_URL}" class="ajax btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></a>
 									</div>
 								</td>
 							</tr>

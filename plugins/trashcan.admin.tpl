@@ -4,10 +4,10 @@
 					<div class="block">
 						<h5>{PHP.L.Trashcan}</h5>
 						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-						<p>
-							<a title="{PHP.L.Configuration}" href="{ADMIN_TRASHCAN_CONF_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
-							<a title="{PHP.L.Wipeall}" href="{ADMIN_TRASHCAN_WIPEALL_URL}" class="btn btn-danger"><i class="icon-remove"></i> {PHP.L.Wipeall}</a>
-						</p>
+						<div class="btn-group item-control">
+							<a title="{PHP.L.Configuration}" href="{ADMIN_TRASHCAN_CONF_URL}" class="btn btn-primary"><i class="icon-cog"></i> <span>{PHP.L.Configuration}</span></a>
+							<a title="{PHP.L.Wipeall}" href="{ADMIN_TRASHCAN_WIPEALL_URL}" class="btn btn-danger"><i class="icon-remove"></i> <span>{PHP.L.Wipeall}</span></a>
+						</div>
 						<table class="table table-bordered">
 							<thead>
 							<tr>
@@ -24,9 +24,13 @@
 								<td class="text-center">{ADMIN_TRASHCAN_DATE}</td>
 								<td class="text-center"><a href="{ADMIN_TRASHCAN_ROW_INFO_URL}">{ADMIN_TRASHCAN_TITLE}</a></td>
 								<td class="text-center">{ADMIN_TRASHCAN_TRASHEDBY}</td>
-								<td class="text-center action">
-									<!-- IF {ADMIN_TRASHCAN_ROW_RESTORE_ENABLED} --><a title="{PHP.L.Restore}" href="{ADMIN_TRASHCAN_ROW_RESTORE_URL}" class="btn btn-success btn-small"><i class="icon-share"></i> {PHP.L.Restore}</a><!-- ENDIF -->
-									<a title="{PHP.L.Wipe}" href="{ADMIN_TRASHCAN_ROW_WIPE_URL}" class="btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Wipe}</a>
+								<td class="centerall action">
+									<div class="btn-group">
+<!-- IF {ADMIN_TRASHCAN_ROW_RESTORE_ENABLED} -->
+										<a title="{PHP.L.Restore}" href="{ADMIN_TRASHCAN_ROW_RESTORE_URL}" class="btn btn-small"><i class="icon-share"></i> <span>{PHP.L.Restore}</span></a>
+<!-- ENDIF -->
+										<a title="{PHP.L.Wipe}" href="{ADMIN_TRASHCAN_ROW_WIPE_URL}" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Wipe}</span></a>
+									</div>
 								</td>
 							</tr>
 <!-- END: TRASHCAN_ROW -->

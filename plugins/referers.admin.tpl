@@ -5,10 +5,10 @@
 						<h5>{PHP.L.Referers}</h5>
 						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <!-- IF {PHP.usr.isadmin} -->
-						<p>
-							<a href="{ADMIN_REFERERS_URL_PRUNE}" class="btn btn-primary">{PHP.L.adm_purgeall}</a>
-							<a href="{ADMIN_REFERERS_URL_PRUNELOWHITS}" class="btn btn-primary">{PHP.L.adm_ref_prunelowhits}</a>
-						</p>
+						<div class="btn-group item-control">
+							<a href="{ADMIN_REFERERS_URL_PRUNE}" class="btn btn-primary"><i class="icon-remove"></i> <span>{PHP.L.adm_purgeall}</span></a>
+							<a href="{ADMIN_REFERERS_URL_PRUNELOWHITS}" class="btn btn-primary"><i class="icon-remove"></i> <span>{PHP.L.adm_ref_prunelowhits}</span></a>
+						</div>
 <!-- ENDIF -->
 <!-- IF {PHP.is_ref_empty} -->
 						<table class="table table-bordered">
