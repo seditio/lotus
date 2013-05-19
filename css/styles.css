@@ -18,7 +18,7 @@ body						{ color:#3c3c3c; font-family:'Open Sans', sans-serif; font-size:13px; 
 	#sidebar div#profile ul li				{ margin:2px 0 5px; }
 	#sidebar div#profile ul li a				{ text-overflow:ellipsis; white-space:nowrap; display:block; overflow:hidden; }
 	
-	#sidebar hr							{ border:0; }
+	#sidebar hr							{ margin:5px 0; border:0; }
 	
 	#menu								{ margin:0 0 15px; list-style:none; }
 		#menu ul							{ margin:0; list-style:none; overflow:hidden; }
@@ -36,11 +36,11 @@ body						{ color:#3c3c3c; font-family:'Open Sans', sans-serif; font-size:13px; 
 	#menu .accordion-body li				{ color:#fff; padding:6px 5px 6px 20px; border-bottom:1px solid #6e6e6e; box-shadow:0 1px 0 0 #888 inset; }
 	#menu .accordion-body li a				{ color:#fff; font-size:12px; font-weight:400; text-shadow:0 1px 0 rgba(0,0,0,.2); }
 
-	.miniwidget							{ margin:0 10px 2px; padding:8px 10px 12px; background:linear-gradient(to bottom, #fdfdfd, #f9f9f9) repeat-x scroll 0 0 #fbfbfb; border:1px solid #d8d8d8; box-shadow:0 1px 0 0 #f7f7f7, 0 5px 4px -4px #d8d8d8; }
+	.miniwidget							{ margin:0 10px 2px; padding:8px 10px; background:linear-gradient(to bottom, #fdfdfd, #f9f9f9) repeat-x scroll 0 0 #fbfbfb; border:1px solid #d8d8d8; box-shadow:0 1px 0 0 #f7f7f7, 0 5px 4px -4px #d8d8d8; }
 	.miniwidget strong					{ color:#000; font-weight:600; margin:0 0 5px; display:block; }
-	.miniwidget p						{ font-size:12px; margin:0; }
-	.miniwidget ul						{ font-size:11px; font-weight:100; text-shadow:0 1px 0 #fff; margin:0; }
+	.miniwidget ul, .miniwidget p			{ font-size:11px; font-weight:100; text-shadow:0 1px 0 #fff; margin:0; }
 	.miniwidget ul li						{ padding:2px 0 3px; border-bottom:1px dotted #ccc; }
+	.miniwidget a						{ border-bottom:1px dotted; }
 	
 #content								{ padding:0 15px; background:#fff; overflow:hidden; position:relative; }
 

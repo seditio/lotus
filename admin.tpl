@@ -85,7 +85,7 @@
 					</div>
 					<div id="pages" class="accordion-body collapse">
 						<ul class="accordion-inner">
-							<li><i class="icon-li icon-ban-circle"></i><a href="{ADMIN_HOME_URL}">{PHP.L.adm_valqueue}: {PHP.pagesqueued}</a></li>
+							<li><i class="icon-li icon-ban-circle"></i><a href="{PHP|cot_url('admin','m=page')}">{PHP.L.adm_valqueue}: {PHP.pagesqueued}</a></li>
 							<li><i class="icon-li icon-plus-sign"></i><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
 							<li><i class="icon-li icon-reorder"></i><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
 						</ul>
@@ -99,7 +99,7 @@
 					</div>
 					<div id="users" class="accordion-body collapse">
 						<ul class="accordion-inner">
-							<li><i class="icon-li icon-cog"></i><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=core&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
+							<li><i class="icon-li icon-cog"></i><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
 							<li><i class="icon-li icon-reorder"></i><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
 							<li><i class="icon-li icon-lock"></i><a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a></li>
 						</ul>
@@ -110,17 +110,21 @@
 			<div class="miniwidget">
 				<strong>Cotonti Siena Info:</strong>
 				<ul class="unstyled">
-					<li>Версия: <span class="pull-right">0.9.13</span></li>
-					<li>База данных: <span class="pull-right">0.9.14-02</span></li>
-					<li>БД SQL, строк: <span class="pull-right">800</span></li>
-					<li>БД SQL, размер индекса (KB): <span class="pull-right">223.0</span></li>
-					<li>БД SQL, размер данных (KB): <span class="pull-right">56.7</span></li>
-					<li>БД SQL, общий размер (KB): <span class="pull-right">279.7</span></li>
-					<li>Плагины: <span class="pull-right">33</span></li>
-					<li>Хуки: <span class="pull-right">205</span></li>
+					<li>Версия: <span class="pull-right">{PHP.cfg.version}</span></li>
+					<li>База данных: <span class="pull-right">-0.9.14-02-</span></li>
+					<li>БД SQL, строк: <span class="pull-right">{PHP.total_rows}</span></li>
+					<li>БД SQL, размер индекса (KB): <span class="pull-right">-223.0-</span></li>
+					<li>БД SQL, размер данных (KB): <span class="pull-right">-56.7-</span></li>
+					<li>БД SQL, общий размер (KB): <span class="pull-right">-279.7-</span></li>
+					<li>Плагины: <span class="pull-right">{PHP.totalplugins}</span></li>
+					<li>Хуки: <span class="pull-right">{PHP.totalhooks}</span></li>
 				</ul>
 			</div>
-			
+			<hr>
+			<div class="miniwidget">
+				<p>Powered by <a href="http://www.cotonti.com">Cotonti Siena</a></p>
+				<p>Theme developed by <a href="http://www.seditio.by">Seditio.by</a></p>
+			</div>
 			<hr>
 
 		</div>
@@ -136,7 +140,7 @@
 		</div>
 
 		<nav>
-			<h1>Section Name</h1>
+			<h1>Section Name [m={PHP.m} | s={PHP.s} | p={PHP.p} | o={PHP.o}]</h1>
 			<div class="row-fluid hide">
 				<div class="span2">
 					<a href="{PHP|cot_url('admin')}" class="<!-- IF !{PHP.m} -->sel<!-- ENDIF -->" title="{PHP.L.Administration}">

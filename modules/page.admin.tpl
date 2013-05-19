@@ -16,12 +16,12 @@
 					<div class="block">
 						<h5>{PHP.L.Pages} ({ADMIN_PAGE_TOTALDBPAGES})</h5>
 						{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-						<p>
+						<div class="btn-group">
 							<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
-							<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields_desc}</a>
-							<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Categories}</a></li>
-							<a href="{ADMIN_PAGE_URL_ADD}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.page_addtitle}</a>
-						</p>
+							<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="icon-reorder"></i> {PHP.L.adm_extrafields_desc}</a>
+							<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="btn btn-primary"><i class="icon-sitemap"></i> {PHP.L.Categories}</a></li>
+							<a href="{ADMIN_PAGE_URL_ADD}" class="btn btn-primary"><i class="icon-plus-sign"></i> {PHP.L.page_addtitle}</a>
+						</div>
 					</div>
 					<div class="block">
 						<h5>{PHP.L.Pages}:</h5>
@@ -32,7 +32,7 @@
 									<th colspan="4">
 										<input type="hidden" name="paction" value="" />
 										<!-- IF {ADMIN_PAGE_TOTALITEMS} > 1 -->{PHP.L.adm_sort} {ADMIN_PAGE_ORDER} {ADMIN_PAGE_WAY}<!-- ENDIF --> {PHP.L.Show} {ADMIN_PAGE_FILTER}
-										<button name="paction" type="submit" onclick="this.form.paction.value=this.value" class="btn btn-primary">{PHP.L.Filter}</button>
+										<button name="paction" type="submit" onclick="this.form.paction.value=this.value" class="btn btn-primary"><i class="icon-filter"></i> {PHP.L.Filter}</button>
 									</th>
 								</tr>
 								<tr>
@@ -76,11 +76,13 @@
 										</div>
 									</div>
 								</td>
-								<td class="action {ADMIN_PAGE_ODDEVEN} text-center">
-									<!-- IF {PHP.row.page_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PAGE_URL_FOR_VALIDATED}" class="confirmLink btn btn-primary btn-small">{PHP.L.Validate}</a><!-- ENDIF -->
-									<a title="{PHP.L.Delete}" href="{ADMIN_PAGE_URL_FOR_DELETED}" class="confirmLink btn btn-primary btn-small">{PHP.L.short_delete}</a>
-									<a title="{PHP.L.Open}" href="{ADMIN_PAGE_ID_URL}" target="_blank" class="btn btn-primary btn-small">{PHP.L.short_open}</a>
-									<a title="{PHP.L.Edit}" href="{ADMIN_PAGE_URL_FOR_EDIT}" target="_blank" class="btn btn-primary btn-small">{PHP.L.Edit}</a>
+								<td class="action {ADMIN_PAGE_ODDEVEN} centerall">
+									<div class="btn-group">
+										<!-- IF {PHP.row.page_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PAGE_URL_FOR_VALIDATED}" class="confirmLink btn btn-small"><i class="icon-flag-checkered"></i> <span>{PHP.L.Validate}</span></a><!-- ENDIF -->
+										<a title="{PHP.L.Delete}" href="{ADMIN_PAGE_URL_FOR_DELETED}" class="confirmLink btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.short_delete}</span></a>
+										<a title="{PHP.L.Open}" href="{ADMIN_PAGE_ID_URL}" target="_blank" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.short_open}</span></a>
+										<a title="{PHP.L.Edit}" href="{ADMIN_PAGE_URL_FOR_EDIT}" target="_blank" class="btn btn-small"><i class="icon-edit"></i> <span>{PHP.L.Edit}</span></a>
+									</div>
 								</td>
 							</tr>
 <!-- END: PAGE_ROW -->
@@ -90,9 +92,13 @@
 							</tr>
 <!-- ENDIF -->
 							<tr>
-								<td class="valid" colspan="4">
-									<!-- IF {PHP.filter} != {PHP.L.adm_validated} --><button name="paction" type="submit" onclick="this.form.paction.value=this.value" class="confirm btn btn-primary">{PHP.L.Validate}</button><!-- ENDIF -->
-									<button name="paction" type="submit" onclick="this.form.paction.value=this.value" class="btn btn-primary">{PHP.L.Delete}</button>
+								<td colspan="4" class="centerall">
+									<div class="btn-group">
+<!-- IF {PHP.filter} != {PHP.L.adm_validated} -->
+										<button name="paction" type="submit" onclick="this.form.paction.value=this.value" class="confirm btn btn-primary"><i class="icon-flag-checkered"></i> <span>{PHP.L.Validate}</span></button>
+<!-- ENDIF -->
+										<button name="paction" type="submit" onclick="this.form.paction.value=this.value" class="btn btn-danger"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></button>
+									</div>
 								</td>
 							</tr>
 						</table>
