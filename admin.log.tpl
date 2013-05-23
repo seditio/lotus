@@ -41,7 +41,13 @@
 							</tbody>
 						</table>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_LOG_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_LOG_ON_PAGE}</p>
-						<div class="pagination">{ADMIN_LOG_PAGINATION_PREV}{ADMIN_LOG_PAGNAV}{ADMIN_LOG_PAGINATION_NEXT}</p>
+<!-- IF {ADMIN_LOG_PAGNAV} -->
+						<div class="pagination">
+							<ul>
+								{ADMIN_LOG_PAGINATION_PREV}{ADMIN_LOG_PAGNAV}{ADMIN_LOG_PAGINATION_NEXT}
+							</ul>
+						</div>
+<!-- ENDIF -->
 					</div>
 				</div>
 			</div>

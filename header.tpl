@@ -23,6 +23,7 @@
 	<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/overrides.css" type="text/css" rel="stylesheet" />
 	
 	<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>
 	<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/js.js" type="text/javascript"></script>
 
 </head>

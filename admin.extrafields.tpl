@@ -169,7 +169,11 @@
 								</tr>
 							</table>
 						</form>
-						<div class="pagination">{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT}</div>
+<!-- IF {ADMIN_EXTRAFIELDS_PAGNAV} -->
+						<div class="pagination pagination-small pagination-center">
+							<ul>{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT}</ul>
+						</div>
+<!-- ENDIF -->
 						<p class="text-center">{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_EXTRAFIELDS_COUNTER_ROW}</p>
 
 

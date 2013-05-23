@@ -145,7 +145,7 @@ h6		{ font-size:13px; }
 
 @media (max-width: 768px)	{
 
-	#hdm				{ display:none; }
+	#hds				{ display:none; }
 	.item-control span	{ display:none; }
 
 }

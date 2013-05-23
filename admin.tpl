@@ -1,13 +1,13 @@
 <!-- BEGIN: MAIN -->
-
-	<div class="container-fluid fixed">
+	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
 				<div id="topbar">
 					<ul id="layout">
-						<li id="hdm"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-horizontal"></i> <span>Hide Menu</span></a></li>
-						<li id="hdn"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-resize-vertical"></i> <span>Show Nav</span></a></li>
-						<li id="str"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-fullscreen"></i> <span>Stretch</span></a></li>
+						<li id="hds"><a href="#" class="btn btn-mini btn-block disabled" rel="{PHP.L.hds0} / {PHP.L.hds1}"><i class="icon-resize-horizontal"></i> <span>{PHP.L.hds0}</span></a></li>
+						<li id="hdn"><a href="#" class="btn btn-mini btn-block disabled" rel="{PHP.L.hdn0} / {PHP.L.hdn1}"><i class="icon-resize-vertical"></i> <span>{PHP.L.hdn0}</span></a></li>
+						<li id="str"><a href="#" class="btn btn-mini btn-block disabled" rel="{PHP.L.str0} / {PHP.L.str1}"><i class="icon-fullscreen"></i> <span>{PHP.L.str0}</span></a></li>
+						<li id="rem"><a href="#" class="btn btn-mini btn-block disabled"><i class="icon-remove"></i> <span>{PHP.L.Reset}</span></a></li>
 					</ul>
 					<ul id="settings">
 						<li>
@@ -30,9 +30,9 @@
 	
 		<div id="sidebar">
 		
-			<a href="{PHP|cot_url('admin')}" id="logo">Cotonti Siena Dashboard</a>
+			<a href="{PHP|cot_url('admin')}" id="logo">{PHP.L.admin-panel}</a>
 			<div id="profile">
-				<p>Welcome, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></p>
+				<p>{PHP.L.admin-hi}, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></p>
 				<i class="icon-user icon-3x icon-border pull-left"></i>
 				<ul>
 					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=profile')}"><i class="icon-user-md"></i> {PHP.L.Profile}</a></li>
@@ -46,10 +46,10 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#mainnav">
-							<i class="icon-dashboard"></i> Main Navigation
+							<i class="icon-dashboard"></i> {PHP.L.Navigation}
 						</a>
 					</div>
-					<div id="mainnav" class="accordion-body collapse in">
+					<div id="mainnav" class="accordion-body collapse">
 						<ul class="accordion-inner">
 							<li><i class="icon-li icon-home"></i><a href="{PHP|cot_url('admin')}">{PHP.L.Home}</a></li>
 							<li><i class="icon-li icon-cog"></i><a href="{PHP|cot_url('admin', 'm=config')}">{PHP.L.Configuration}</a></li>
@@ -140,8 +140,8 @@
 		</div>
 
 		<nav>
-			<h1>Section Name [m={PHP.m} | s={PHP.s} | p={PHP.p} | o={PHP.o}]</h1>
-			<div class="row-fluid hide">
+			<h1>{PHP.L.admin-sectionname}: [m={PHP.m} | s={PHP.s} | p={PHP.p} | o={PHP.o}]</h1>
+			<div class="row-fluid">
 				<div class="span2">
 					<a href="{PHP|cot_url('admin')}" class="<!-- IF !{PHP.m} -->sel<!-- ENDIF -->" title="{PHP.L.Administration}">
 						<i class="icon-dashboard"></i>

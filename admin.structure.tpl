@@ -113,10 +113,12 @@
 					</tr>
 				</table>
 			</form>
-<!-- IF {ADMIN_STRUCTURE_PAGNAV} -->
-			<div class="pagination">{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT}</div>
-<!-- ENDIF -->
 			<p class="text-center">{PHP.L.Total}: {ADMIN_STRUCTURE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_STRUCTURE_COUNTER_ROW}</p>
+<!-- IF {ADMIN_STRUCTURE_PAGNAV} -->
+			<div class="pagination pagination-small pagination-centered">
+				<ul>{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT}</ul>
+			</div>
+<!-- ENDIF -->
 <!-- END: DEFAULT -->
 
 <!-- BEGIN: NEWCAT -->

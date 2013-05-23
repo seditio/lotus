@@ -52,13 +52,15 @@
 							</tr>
 							<!-- END: POLLS_ROW_EMPTY -->
 						</table>
-	
-<!-- IF {ADMIN_POLLS_PAGNAV} -->
-						<div class="pagination">{ADMIN_POLLS_PAGINATION_PREV}{ADMIN_POLLS_PAGNAV}{ADMIN_POLLS_PAGINATION_NEXT}</div>
-<!-- ENDIF -->
 						<p class="text-center">{PHP.L.Total}: {ADMIN_POLLS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_POLLS_ON_PAGE}</p>
+<!-- IF {ADMIN_POLLS_PAGNAV} -->
+						<div class="pagination">
+							<ul>
+								{ADMIN_POLLS_PAGINATION_PREV}{ADMIN_POLLS_PAGNAV}{ADMIN_POLLS_PAGINATION_NEXT}
+							</ul>
+						</div>
+<!-- ENDIF -->
 					</div>
-					
 					<div class="block">
 						<h5>{ADMIN_POLLS_FORMNAME}:</h5>
 						<form id="addpoll" action="{ADMIN_POLLS_FORM_URL}" method="post">
@@ -101,7 +103,6 @@
 								</tr>
 							</table>
 						</form>
-	
 					</div>
 				</div>
 			</div>

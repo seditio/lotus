@@ -102,8 +102,14 @@
 								</td>
 							</tr>
 						</table>
-						<div class="pagination">{ADMIN_PAGE_PAGINATION_PREV}{ADMIN_PAGE_PAGNAV}{ADMIN_PAGE_PAGINATION_NEXT}</div>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_PAGE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_PAGE_ON_PAGE}</p>
+<!-- IF {ADMIN_PAGE_PAGNAV} -->
+						<div class="pagination">
+							<ul>
+								{ADMIN_PAGE_PAGINATION_PREV}{ADMIN_PAGE_PAGNAV}{ADMIN_PAGE_PAGINATION_NEXT}
+							</ul>
+						</div>
+<!-- ENDIF -->
 						</form>
 					</div>
 				</div>

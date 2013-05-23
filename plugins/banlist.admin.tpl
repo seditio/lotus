@@ -31,8 +31,14 @@
 							</form>
 <!-- END: ADMIN_BANLIST_ROW -->
 						</table>
-						<div class="pagination">{ADMIN_BANLIST_PAGINATION_PREV}{ADMIN_BANLIST_PAGNAV}{ADMIN_BANLIST_PAGINATION_NEXT}</div>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_BANLIST_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_BANLIST_COUNTER_ROW}</p>
+<!-- IF {ADMIN_BANLIST_PAGNAV} -->
+						<div class="pagination">
+							<ul>
+								{ADMIN_BANLIST_PAGINATION_PREV}{ADMIN_BANLIST_PAGNAV}{ADMIN_BANLIST_PAGINATION_NEXT}
+							</ul>
+						</div>
+<!-- ENDIF -->
 					</div>
 					
 					<div class="block">
