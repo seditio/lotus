@@ -11,11 +11,13 @@
 			</div>
 <!-- END: UPDATE -->
 
+<!-- IF {ERROR_ROW_MSG} -->
 			<div class="row-fluid">
 				<div class="span12">
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 				</div>
 			</div>
+<!-- ENDIF -->
 
 			<div class="row-fluid">
 				<div class="span4">

@@ -99,10 +99,7 @@ $().ready(function() {
 
 	$('#menu div.accordion-heading').click(function()
 	{
-		if $(this).next('div.accordion-body').hasClass('in')
-		{
-			$.cookie('acct', $(this).find('a').attr('href'), {expires: 365, path: '/'});
-		}
+		$.cookie('acct', $(this).find('a').attr('href'), {expires: 365, path: '/'});
 	});
 	
 	$('li.loginout a').prepend('<i class="icon-lock" /> ').addClass('btn btn-mini btn-block disabled');
