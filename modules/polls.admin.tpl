@@ -54,10 +54,8 @@
 						</table>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_POLLS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_POLLS_ON_PAGE}</p>
 <!-- IF {ADMIN_POLLS_PAGNAV} -->
-						<div class="pagination">
-							<ul>
-								{ADMIN_POLLS_PAGINATION_PREV}{ADMIN_POLLS_PAGNAV}{ADMIN_POLLS_PAGINATION_NEXT}
-							</ul>
+						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
+							<ul>{ADMIN_POLLS_PAGINATION_PREV}{ADMIN_POLLS_PAGNAV}{ADMIN_POLLS_PAGINATION_NEXT}</ul>
 						</div>
 <!-- ENDIF -->
 					</div>

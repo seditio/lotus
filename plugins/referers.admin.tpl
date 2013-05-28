@@ -34,10 +34,8 @@
 						</table>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_REFERERS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_REFERERS_ON_PAGE}</p>
 <!-- IF {ADMIN_REFERERS_PAGNAV} -->
-						<div class="pagination">
-							<ul>
-								{ADMIN_REFERERS_PAGINATION_PREV}{ADMIN_REFERERS_PAGNAV}{ADMIN_REFERERS_PAGINATION_NEXT}
-							</ul>
+						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
+							<ul>{ADMIN_REFERERS_PAGINATION_PREV}{ADMIN_REFERERS_PAGNAV}{ADMIN_REFERERS_PAGINATION_NEXT}</ul>
 						</div>
 <!-- ENDIF -->
 <!-- ELSE -->

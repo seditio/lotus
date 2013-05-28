@@ -38,10 +38,8 @@
 						</table>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_COMMENTS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_COMMENTS_COUNTER_ROW}</p>
 <!-- IF {ADMIN_COMMENTS_PAGNAV} -->
-						<div class="pagination">
-							<ul>
-								{ADMIN_COMMENTS_PAGINATION_PREV}{ADMIN_COMMENTS_PAGNAV}{ADMIN_COMMENTS_PAGINATION_NEXT}
-							</ul>
+						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
+							<ul>{ADMIN_COMMENTS_PAGINATION_PREV}{ADMIN_COMMENTS_PAGNAV}{ADMIN_COMMENTS_PAGINATION_NEXT}</ul>
 						</div>
 <!-- ENDIF -->
 					</div>

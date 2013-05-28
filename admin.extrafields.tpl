@@ -170,7 +170,7 @@
 							</table>
 						</form>
 <!-- IF {ADMIN_EXTRAFIELDS_PAGNAV} -->
-						<div class="pagination pagination-small pagination-center">
+						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
 							<ul>{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT}</ul>
 						</div>
 <!-- ENDIF -->

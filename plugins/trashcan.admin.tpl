@@ -37,10 +37,8 @@
 						</table>
 						<p class="text-center">{PHP.L.Total}: {ADMIN_TRASHCAN_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_TRASHCAN_COUNTER_ROW}</p>
 <!-- IF {ADMIN_TRASHCAN_PAGNAV} -->
-						<div class="pagination">
-							<ul>
-								{ADMIN_TRASHCAN_PAGINATION_PREV}{ADMIN_TRASHCAN_PAGNAV}{ADMIN_TRASHCAN_PAGINATION_NEXT}
-							</ul>
+						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
+							<ul>{ADMIN_TRASHCAN_PAGINATION_PREV}{ADMIN_TRASHCAN_PAGNAV}{ADMIN_TRASHCAN_PAGINATION_NEXT}</ul>
 						</div>
 <!-- ENDIF -->
 					</div>
