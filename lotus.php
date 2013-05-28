@@ -2,6 +2,9 @@
 
 defined('COT_CODE') or die('Wrong URL');
 
+$R['admin-config-pagialign'] = 'centered';
+$R['admin-config-pagisize'] = 'small';
+
 // Redefine Pagination
 
 $R['link_pagenav_main'] = '<li><a href="{$url}"{$event}{$rel}>{$num}</a></li>';

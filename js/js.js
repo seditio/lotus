@@ -2,9 +2,9 @@ $().ready(function() {
 
 	$('#rem a').click(function()
 	{
-		$.cookie('hds', null);
-		$.cookie('hdn', null);
-		$.cookie('str', null);
+		$.cookie('hds', null); // Hide sidebar
+		$.cookie('hdn', null); // Hide main navigation
+		$.cookie('str', null); // Eliminate margins to fill out all space
 		$.cookie('acct', null);
 		return false;
 	});
@@ -99,7 +99,10 @@ $().ready(function() {
 
 	$('#menu div.accordion-heading').click(function()
 	{
-		$.cookie('acct', $(this).find('a').attr('href'), {expires: 365, path: '/'});
+		if $(this).next('div.accordion-body').hasClass('in')
+		{
+			$.cookie('acct', $(this).find('a').attr('href'), {expires: 365, path: '/'});
+		}
 	});
 	
 	$('li.loginout a').prepend('<i class="icon-lock" /> ').addClass('btn btn-mini btn-block disabled');

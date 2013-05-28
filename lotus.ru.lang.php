@@ -17,6 +17,7 @@ defined('COT_CODE') or die('Wrong URL.');
 
 $L['admin-hi'] = 'Привет';
 $L['admin-panel'] = 'Управление сайтом';
+$L['admin-queued'] = 'на утверждении';
 $L['admin-sectionname'] = 'Локация';
 
 $L['hds0'] = 'Скрыть сайдбар';

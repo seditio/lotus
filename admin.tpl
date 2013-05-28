@@ -85,7 +85,7 @@
 					</div>
 					<div id="pages" class="accordion-body collapse">
 						<ul class="accordion-inner">
-							<li><i class="icon-li icon-ban-circle"></i><a href="{PHP|cot_url('admin','m=page')}">{PHP.L.adm_valqueue}: {PHP.pagesqueued}</a></li>
+							<li><i class="icon-li icon-ban-circle"></i><a href="{PHP|cot_url('admin','m=page')}">{PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a></li>
 							<li><i class="icon-li icon-plus-sign"></i><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
 							<li><i class="icon-li icon-reorder"></i><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
 						</ul>
@@ -140,7 +140,7 @@
 		</div>
 
 		<nav>
-			<h1>{PHP.L.admin-sectionname}: [m={PHP.m} | s={PHP.s} | p={PHP.p} | o={PHP.o}]</h1>
+			<h1><!-- IF {ADMIN_SUBTITLE} -->{ADMIN_SUBTITLE}<!-- ELSE -->{PHP.L.Home}<!-- ENDIF --> env.ext='{PHP.env.ext}' m='{PHP.m}' n='{PHP.n}'</h1>
 			<div class="row-fluid">
 				<div class="span2">
 					<a href="{PHP|cot_url('admin')}" class="<!-- IF !{PHP.m} -->sel<!-- ENDIF -->" title="{PHP.L.Administration}">
