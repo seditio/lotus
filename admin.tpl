@@ -140,7 +140,7 @@
 		</div>
 
 		<nav>
-			<h1><!-- IF {ADMIN_SUBTITLE} -->{ADMIN_SUBTITLE}<!-- ELSE -->{PHP.L.Home}<!-- ENDIF --> env.ext='{PHP.env.ext}' m='{PHP.m}' n='{PHP.n}'</h1>
+			<h1><!-- IF {ADMIN_SUBTITLE} -->{ADMIN_SUBTITLE}<!-- ELSE -->{PHP.L.Home}<!-- ENDIF --></h1>
 			<div class="row-fluid">
 				<div class="span2">
 					<a href="{PHP|cot_url('admin')}" class="<!-- IF !{PHP.m} -->sel<!-- ENDIF -->" title="{PHP.L.Administration}">

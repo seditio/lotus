@@ -54,8 +54,8 @@ div#topbar							{ padding:5px 0; height:22px; background:#efefef; border-bottom
 	div#topbar a:hover				{ text-decoration:none; }
 	
 	div#topbar ul						{ list-style:none; }
-	div#topbar ul li					{ margin:0 0 0 10px; list-style:none; float:left; }
-	div#topbar ul li:first-child		{ margin-left:0; }
+	div#topbar ul li					{ margin:0 10px 0 0; list-style:none; float:left; }
+	div#topbar ul li.loginout			{ margin:0; }
 	
 	div#topbar ul#settings			{ margin:0 15px 0 0; float:right; }
 	div#topbar ul#layout				{ margin:0 0 0 229px; }
@@ -146,23 +146,23 @@ h6		{ font-size:13px; }
 
 @media (max-width: 768px)	{
 
-
 	.item-control span	{ display:none; }
+	#hdn				{ display:none; }
+	
+	select#selectmenu	{ display:block; }
+	nav div.row-fluid		{ display:none; }
 
 }
 
 @media (max-width: 980px)	{
 
-	div#topbar ul#layout	{ margin-left:5px; }
+	div#topbar ul#layout	{ margin-left:15px; }
 	#sidebar			{ display:none; }
 	#content			{ margin:0; }
 
 	#hds				{ display:none; }
 	
-	select#selectmenu		{ display:block; }
-	nav div.row-fluid			{ display:none; }
-	
-	#topbar li span			{ display:none; }
+	#topbar li span		{ display:none; }
 
 }
 

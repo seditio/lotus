@@ -22,9 +22,9 @@
 			<thead>
 				<tr>
 					<th>{PHP.L.Name} {PHP.L.adm_clicktoedit}</th>
-					<th>{PHP.L.Code}</th>
-					<th>{PHP.L.Version}</th>
-					<th>{PHP.L.Parts}</th>
+					<th class="hidden-phone">{PHP.L.Code}</th>
+					<th class="hidden-phone">{PHP.L.Version}</th>
+					<th class="hidden-phone">{PHP.L.Parts}</th>
 					<th>{PHP.L.Status}</th>
 					<th>{PHP.L.Action}</th>
 				</tr>
@@ -49,15 +49,15 @@
 					<a href="{ADMIN_EXTENSIONS_DETAILS_URL}">{ADMIN_EXTENSIONS_NAME}</a>
 					<p>{ADMIN_EXTENSIONS_DESCRIPTION|cot_cutstring($this,60)}</p>
 				</td>
-				<td class="centerall">{ADMIN_EXTENSIONS_CODE_X}</td>
-				<td class="centerall">
+				<td class="centerall hidden-phone">{ADMIN_EXTENSIONS_CODE_X}</td>
+				<td class="centerall hidden-phone">
 					<!-- IF {PHP.part_status} != 3 AND {ADMIN_EXTENSIONS_VERSION_COMPARE} > 0 -->
 					<span class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</span> / <span class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</span>
 					<!-- ELSE -->
 					{ADMIN_EXTENSIONS_VERSION}
 					<!-- ENDIF -->
 				</td>
-				<td class="centerall">{ADMIN_EXTENSIONS_PARTSCOUNT}</td>
+				<td class="centerall hidden-phone">{ADMIN_EXTENSIONS_PARTSCOUNT}</td>
 				<td class="centerall">{ADMIN_EXTENSIONS_STATUS}</td>
 				<td class="action centerall">
 					<div class="btn-group">

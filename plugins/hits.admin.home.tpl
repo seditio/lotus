@@ -7,12 +7,12 @@
 <!-- BEGIN: ADMIN_HOME_ROW -->
 			<tr>
 				<td class="width15">{ADMIN_HOME_DAY}</td>
-				<td class="width60">
+				<td class="hidden-phone width60">
 					<div class="progress progress-striped">
 						<div class="bar" style="width:{ADMIN_HOME_PERCENTBAR}%;">{ADMIN_HOME_PERCENTBAR}%</div>
 					</div>
 				</td>
-				<td class="text-right width25">{PHP.L.Hits}: {ADMIN_HOME_HITS}</td>
+				<td class="text-right width25">{ADMIN_HOME_HITS|cot_declension($this,'Hits')}</td>
 			</tr>
 <!-- END: ADMIN_HOME_ROW -->
 		</table>

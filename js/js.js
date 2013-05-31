@@ -102,7 +102,7 @@ $().ready(function() {
 		$.cookie('acct', $(this).find('a').attr('href'), {expires: 365, path: '/'});
 	});
 	
-	$('li.loginout a').prepend('<i class="icon-lock" /> ').addClass('btn btn-mini btn-block disabled');
+	$('li.loginout a').wrapInner('<span />').prepend('<i class="icon-lock" /> ').addClass('btn btn-mini btn-block disabled');
 
 	$('div.block').each(function(){
 		$(this).children(':gt(0)').wrapAll('<div class="wrapper" />');
