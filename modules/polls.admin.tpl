@@ -34,14 +34,14 @@
 								<td class="action centerall">
 									<div class="btn-group">
 									<!-- IF !{ADMIN_POLLS_ROW_POLL_LOCKED} -->
-									<a title="{PHP.L.Lock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-mini"><i class="icon-ban-circle"></i> {PHP.L.Lock}</a>
+									<a title="{PHP.L.Lock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-ban-circle"></i> {PHP.L.Lock}</a>
 									<!-- ELSE -->
-									<a title="{PHP.L.Unlock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-mini"><i class="icon-ok-circle"></i> {PHP.L.Unlock}</a>
+									<a title="{PHP.L.Unlock}" href="{ADMIN_POLLS_ROW_POLL_URL_LCK}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-ok-circle"></i> {PHP.L.Unlock}</a>
 									<!-- ENDIF -->
-									<a title="{PHP.L.Delete}" href="{ADMIN_POLLS_ROW_POLL_URL_DEL}" class="btn btn-mini"><i class="icon-remove"></i> {PHP.L.Delete}</a>
-									<a title="{PHP.L.Reset}" href="{ADMIN_POLLS_ROW_POLL_URL_RES}" class="btn btn-mini"><i class="icon-refresh"></i> {PHP.L.Reset}</a>
-									<a title="{PHP.L.adm_polls_bump}" href="{ADMIN_POLLS_ROW_POLL_URL_BMP}" class="btn btn-mini"><i class="icon-arrow-up"></i> {PHP.L.adm_polls_bump}</a>
-									<a title="{PHP.L.Open}" href="{ADMIN_POLLS_ROW_POLL_URL_OPN}" class="btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+									<a title="{PHP.L.Delete}" href="{ADMIN_POLLS_ROW_POLL_URL_DEL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+									<a title="{PHP.L.Reset}" href="{ADMIN_POLLS_ROW_POLL_URL_RES}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-refresh"></i> {PHP.L.Reset}</a>
+									<a title="{PHP.L.adm_polls_bump}" href="{ADMIN_POLLS_ROW_POLL_URL_BMP}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-arrow-up"></i> {PHP.L.adm_polls_bump}</a>
+									<a title="{PHP.L.Open}" href="{ADMIN_POLLS_ROW_POLL_URL_OPN}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
 									</div>
 								</td>
 							</tr>
@@ -79,7 +79,7 @@
 										<!-- BEGIN: OPTIONS -->
 										<div class="polloptiondiv">
 											{EDIT_POLL_OPTION_TEXT}
-											<button name="deloption" type="button" class="deloption btn btn-danger btn-mini" style="display:none;"><i class="icon-remove"></i></button>
+											<button name="deloption" type="button" class="deloption btn btn-{PHP.R.admin-config-buttonsize}" style="display:none;"><i class="icon-remove"></i></button>
 										</div>
 										<!-- END: OPTIONS -->
 										<button id="addoption" name="addoption" type="button" class="btn btn-primary" style="display:none;"><i class="icon-plus-sign"></i> {PHP.L.Add}</button>

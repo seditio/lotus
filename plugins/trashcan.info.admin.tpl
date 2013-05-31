@@ -25,8 +25,8 @@
 								<td class="text-center">{ADMIN_TRASHCAN_TITLE}</td>
 								<td class="text-center">{ADMIN_TRASHCAN_TRASHEDBY}</td>
 								<td class="text-center action">
-									<!-- IF {ADMIN_TRASHCAN_ROW_RESTORE_ENABLED} --><a title="{PHP.L.Restore}" href="{ADMIN_TRASHCAN_ROW_RESTORE_URL}" class="btn btn-primary btn-small"><i class="icon-mail-reply"></i> {PHP.L.Cancel}</a><!-- ENDIF -->
-									<a title="{PHP.L.Wipe}" href="{ADMIN_TRASHCAN_ROW_WIPE_URL}" class="btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+									<!-- IF {ADMIN_TRASHCAN_ROW_RESTORE_ENABLED} --><a title="{PHP.L.Restore}" href="{ADMIN_TRASHCAN_ROW_RESTORE_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-mail-reply"></i> {PHP.L.Cancel}</a><!-- ENDIF -->
+									<a title="{PHP.L.Wipe}" href="{ADMIN_TRASHCAN_ROW_WIPE_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.Delete}</a>
 								</td>
 							</tr>
 						</table>

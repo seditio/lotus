@@ -158,7 +158,7 @@
 											{ADMIN_EXTRAFIELDS_ROW_DEFAULT}
 									</td>
 									<td class="centerall {ADMIN_EXTRAFIELDS_ROW_ODDEVEN}">
-										<a title="{PHP.L.Delete}" href="{ADMIN_EXTRAFIELDS_ROW_DEL_URL}" class="ajax btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Delete}</a>
+										<a title="{PHP.L.Delete}" href="{ADMIN_EXTRAFIELDS_ROW_DEL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.Delete}</a>
 									</td>
 								</tr>
 								<!-- END: EXTRAFIELDS_ROW -->

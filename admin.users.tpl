@@ -30,9 +30,9 @@
 								<td class="action centerall">
 									<div class="btn-group">
 									<!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
-									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-small"><i class="icon-lock"></i> <span>{PHP.L.short_rights}</span></a>
+									<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-lock"></i> <span>{PHP.L.short_rights}</span></a>
 									<!-- ENDIF -->
-									<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.short_open}</span></a>
+									<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-folder-open"></i> <span>{PHP.L.short_open}</span></a>
 									</div>
 								</td>
 							</tr>
@@ -171,7 +171,7 @@
 					<!-- IF !{ADMIN_USERS_EDITFORM_SKIPRIGHTS} -->
 					<tr>
 						<td>{PHP.L.Rights}:</td>
-						<td><a href="{ADMIN_USERS_EDITFORM_RIGHT_URL}" class="btn btn-primary btn-small"><i class="icon-lock"></i> {PHP.L.Rights}</a></td>
+						<td><a href="{ADMIN_USERS_EDITFORM_RIGHT_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-lock"></i> {PHP.L.Rights}</a></td>
 					</tr>
 					<!-- ENDIF -->
 <!-- IF {PHP.g} > 5 -->

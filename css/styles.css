@@ -106,6 +106,7 @@ h6		{ font-size:13px; }
 	.centerall .btn-group	{ margin:0; }
 
 .indent-bottom		{ margin-bottom:15px; }	
+.nomargin			{ margin:0!important; }
 
 .ext-icon				{ margin:5px 10px 0 0; display:block; float:left; }
 	.ext-icon + a		{ display:block; overflow:hidden; }
@@ -145,7 +146,7 @@ h6		{ font-size:13px; }
 
 @media (max-width: 768px)	{
 
-	#hds				{ display:none; }
+
 	.item-control span	{ display:none; }
 
 }
@@ -156,6 +157,8 @@ h6		{ font-size:13px; }
 	#sidebar			{ display:none; }
 	#content			{ margin:0; }
 
+	#hds				{ display:none; }
+	
 	select#selectmenu		{ display:block; }
 	nav div.row-fluid			{ display:none; }
 	

@@ -43,7 +43,7 @@
 										</td>
 										<td class="action centerall replaceLink">
 											<div class="btn-group">
-												<button class="btn btn-small" type="submit"><i class="icon-refresh"></i> <span>{PHP.L.Update}</span></button>
+												<button class="btn btn-{PHP.R.admin-config-buttonsize}" type="submit"><i class="icon-refresh"></i> <span>{PHP.L.Update}</span></button>
 												{REMOVE}
 											</div>
 										</td>
@@ -77,7 +77,7 @@
 											</select>
 										</td>
 										<td class="action centerall">
-											<button type="submit" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Add}</span></button>
+											<button type="submit" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> <span>{PHP.L.Add}</span></button>
 										</td>
 									<tr>
 								</form>

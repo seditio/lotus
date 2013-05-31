@@ -22,7 +22,7 @@
 							<td class="textcenter">{ADMIN_DISKCACHE_ITEM_NAME}</td>
 							<td class="textcenter">{ADMIN_DISKCACHE_FILES}</td>
 							<td class="textcenter">{ADMIN_DISKCACHE_SIZE}</td>
-							<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax btn btn-danger btn-mini"><i class="icon-remove"></i> {PHP.L.Delete}</a></td>
+							<td class="centerall"><a title="{PHP.L.Delete}" href="{ADMIN_DISKCACHE_ITEM_DEL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.Delete}</a></td>
 						</tr>
 <!-- END: ADMIN_DISKCACHE_ROW -->
 						</tbody>

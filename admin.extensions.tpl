@@ -62,19 +62,19 @@
 				<td class="action centerall">
 					<div class="btn-group">
 <!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} -->
-					<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="btn btn-small"><i class="icon-cog"></i> <span>{PHP.L.short_config}</span></a>
+					<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-cog"></i> <span>{PHP.L.short_config}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifstruct} -->
-					<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn btn-small"><i class="icon-sitemap"></i> <span>{PHP.L.short_struct}</span></a>
+					<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-sitemap"></i> <span>{PHP.L.short_struct}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.totalinstalled} -->
-					<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="btn btn-small"><i class="icon-lock"></i> <span>{PHP.L.short_rights}</span></a>
+					<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-lock"></i> <span>{PHP.L.short_rights}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifthistools} -->
-					<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn btn-small"><i class="icon-user"></i> <span>{PHP.L.short_admin}</span></a>
+					<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-user"></i> <span>{PHP.L.short_admin}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.if_plg_standalone} -->
-					<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
+					<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
 <!-- ENDIF -->
 					</div>
 				</td>
@@ -102,18 +102,37 @@
 			<!-- ENDIF -->
 			{ADMIN_EXTENSIONS_TYPE} {ADMIN_EXTENSIONS_NAME}:
 		</h5>
+		
+	<!-- IF {PHP.isinstalled} AND {PHP.exists} -->
+		<div class="btn-group">
+			<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
+			<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn btn-primary"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+			<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS} -->
+			<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn btn-danger"><i class="icon-user"></i> {PHP.L.Administration}</a>
+			<!-- ENDIF -->
+			<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} > 0 -->
+			<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
+			<!-- ENDIF -->
+			<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="btn btn-danger"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
+			<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT} -->
+			<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn btn-primary"><i class="icon-sitemap"></i> {PHP.L.Structure}</a>
+			<!-- ENDIF -->
+		</div>
+<!-- ENDIF -->
+		
 		<table class="table table-striped">
 			<tr>
-				<td class="">{PHP.L.Code}:</td>
-				<td class="">{ADMIN_EXTENSIONS_CODE}</td>
+				<td class="text-right">{PHP.L.Code}:</td>
+				<td class="text-left">{ADMIN_EXTENSIONS_CODE}</td>
 			</tr>
 			<tr>
-				<td>{PHP.L.Description}:</td>
-				<td>{ADMIN_EXTENSIONS_DESCRIPTION}</td>
+				<td class="text-right">{PHP.L.Description}:</td>
+				<td class="text-left">{ADMIN_EXTENSIONS_DESCRIPTION}</td>
 			</tr>
 			<tr>
-				<td>{PHP.L.Version}:</td>
-				<td>
+				<td class="text-right">{PHP.L.Version}:</td>
+				<td class="text-left">
 					<!-- IF {PHP.isinstalled} AND {ADMIN_EXTENSIONS_VERSION_COMPARE} > 0 -->
 					<span class="highlight_red">{ADMIN_EXTENSIONS_VERSION_INSTALLED}</span> / <span class="highlight_green">{ADMIN_EXTENSIONS_VERSION}</span>
 					<!-- ELSE -->
@@ -122,8 +141,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td>{PHP.L.Date}:</td>
-				<td>{ADMIN_EXTENSIONS_DATE}</td>
+				<td class="text-right">{PHP.L.Date}:</td>
+				<td class="text-left">{ADMIN_EXTENSIONS_DATE}</td>
 			</tr>
 <!--//<tr>
 	<td>{PHP.L.adm_defauth_guests}:</td>
@@ -142,20 +161,20 @@
 	<td>{ADMIN_EXTENSIONS_ADMRIGHTS_LOCK_MEMBERS} ({ADMIN_EXTENSIONS_LOCK_MEMBERS})</td>
 </tr>//-->
 			<tr>
-				<td>{PHP.L.Author}:</td>
-				<td>{ADMIN_EXTENSIONS_AUTHOR}</td>
+				<td class="text-right">{PHP.L.Author}:</td>
+				<td class="text-left">{ADMIN_EXTENSIONS_AUTHOR}</td>
 			</tr>
 			<tr>
-				<td>{PHP.L.Copyright}:</td>
-				<td>{ADMIN_EXTENSIONS_COPYRIGHT}</td>
+				<td class="text-right">{PHP.L.Copyright}:</td>
+				<td class="text-left">{ADMIN_EXTENSIONS_COPYRIGHT}</td>
 			</tr>
 			<tr>
-				<td>{PHP.L.Notes}:</td>
-				<td>{ADMIN_EXTENSIONS_NOTES}</td>
+				<td class="text-right">{PHP.L.Notes}:</td>
+				<td class="text-left">{ADMIN_EXTENSIONS_NOTES}</td>
 			</tr>
 			<!-- BEGIN: DEPENDENCIES -->
 			<tr>
-				<td>{ADMIN_EXTENSIONS_DEPENDENCIES_TITLE}:</td>
+				<td class="text-right">{ADMIN_EXTENSIONS_DEPENDENCIES_TITLE}:</td>
 				<td>
 					<ul class="unstyled">
 					<!-- BEGIN: DEPENDENCIES_ROW -->
@@ -167,49 +186,29 @@
 				</td>
 			</tr>
 			<!-- END: DEPENDENCIES -->
-		</table>
-	</div>
-	
-	<!-- IF {PHP.isinstalled} AND {PHP.exists} -->
-	<div class="block">
-		<h5>{PHP.L.Action}:</h5>
-		<div class="btn-group">
-			<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
-			<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn btn-primary"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
-			<!-- ENDIF -->
-			<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS} -->
-			<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn btn-danger"><i class="icon-user"></i> {PHP.L.Administration}</a>
-			<!-- ENDIF -->
-			<!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} > 0 -->
-			<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
-			<!-- ENDIF -->
-			<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="btn btn-danger"><i class="icon-lock"></i> {PHP.L.short_rights}</a>
-			<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT} -->
-			<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn btn-primary"><i class="icon-sitemap"></i> {PHP.L.Structure}</a>
-			<!-- ENDIF -->
-		</div>
-	</div>
-<!-- ENDIF -->
-
-	<div class="block">
-		<h5>{PHP.L.Options}:</h5>
-		<div class="btn-group">
+			<tr>
+				<td class="text-right">{PHP.L.Action}:</td>
+				<td>
+					<div class="btn-group nomargin">
 <!-- IF !{PHP.isinstalled} AND {PHP.dependencies_satisfied} -->
-			<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax btn btn-primary">{PHP.L.adm_opt_install}</a>
+						<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}">{PHP.L.adm_opt_install}</a>
 <!-- ENDIF -->
 <!-- IF {PHP.isinstalled} -->
 <!-- IF {PHP.exists} -->
-			<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax btn btn-primary"><i class="icon-refresh"></i> {PHP.L.adm_opt_update}</a>
+						<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-refresh"></i> {PHP.L.adm_opt_update}</a>
 <!-- ENDIF -->
-			<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_URL}" class="ajax btn btn-danger"><i class="icon-remove"></i> {PHP.L.adm_opt_uninstall}</a>
-			<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax btn btn-primary"><i class="icon-pause"></i> {PHP.L.adm_opt_pauseall}</a>
+						<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.adm_opt_uninstall}</a>
+						<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-pause"></i> {PHP.L.adm_opt_pauseall}</a>
 <!-- IF {PHP.exists} -->
-			<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax btn btn-primary"><i class="icon-play"></i> {PHP.L.adm_opt_unpauseall}</a>
+						<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-play"></i> {PHP.L.adm_opt_unpauseall}</a>
 <!-- ENDIF -->
 <!-- ENDIF -->
-		</div>
+					</div>
+				</td>
+			</tr>
+		</table>
 	</div>
-
+	
 	<div class="block">
 		<h5>{PHP.L.Parts}:</h5>
 		<table class="table table-bordered">
@@ -243,10 +242,10 @@
 					&ndash;
 <!-- END: ROW_PART_NOTINSTALLED -->
 <!-- BEGIN: ROW_PART_PAUSE -->
-					<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_PAUSEPART_URL}" class="ajax btn btn-primary btn-mini"><i class="icon-pause"></i> {PHP.L.adm_opt_pause}</a>
+					<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_PAUSEPART_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-pause"></i> {PHP.L.adm_opt_pause}</a>
 <!-- END: ROW_PART_PAUSE -->
 <!-- BEGIN: ROW_PART_UNPAUSE -->
-					<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_UNPAUSEPART_URL}" class="ajax btn btn-primary btn-mini"><i class="icon-play"></i> {PHP.L.adm_opt_unpause}</a>
+					<a href="{ADMIN_EXTENSIONS_DETAILS_ROW_UNPAUSEPART_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-play"></i> {PHP.L.adm_opt_unpause}</a>
 <!-- END: ROW_PART_UNPAUSE -->
 				</td>
 			</tr>

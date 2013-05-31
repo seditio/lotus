@@ -25,8 +25,8 @@
 								<td class="textcenter">{ADMIN_RATINGS_ROW_RATING_AVERAGE}</td>
 								<td class="centerall action">
 									<div class="btn-group">
-										<a title="{PHP.L.Delete}" href="{ADMIN_RATINGS_ROW_URL_DEL}" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></a>
-										<a title="{PHP.L.Open}" href="{ADMIN_RATINGS_ROW_RAT_URL}" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
+										<a title="{PHP.L.Delete}" href="{ADMIN_RATINGS_ROW_URL_DEL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></a>
+										<a title="{PHP.L.Open}" href="{ADMIN_RATINGS_ROW_RAT_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-folder-open"></i> <span>{PHP.L.Open}</span></a>
 									</div>
 								</td>
 							</tr>

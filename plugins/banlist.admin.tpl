@@ -23,8 +23,8 @@
 								<td class="centerall">{ADMIN_BANLIST_ROW_EXPIRE}</td>
 								<td class="action centerall">
 									<div class="btn-group">
-										<button type="submit" class="btn btn-small"><i class="icon-refresh"></i> <span>{PHP.L.Update}</span></button>
-										<button type="submit" onclick="parent.location='{ADMIN_BANLIST_ROW_DELURL}'" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></button>
+										<button type="submit" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-refresh"></i> <span>{PHP.L.Update}</span></button>
+										<button type="submit" onclick="parent.location='{ADMIN_BANLIST_ROW_DELURL}'" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> <span>{PHP.L.Delete}</span></button>
 									</div>
 								</td>
 							</tr>

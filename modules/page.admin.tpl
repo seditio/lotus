@@ -78,10 +78,10 @@
 								</td>
 								<td class="action {ADMIN_PAGE_ODDEVEN} centerall">
 									<div class="btn-group">
-										<!-- IF {PHP.row.page_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PAGE_URL_FOR_VALIDATED}" class="confirmLink btn btn-small"><i class="icon-flag-checkered"></i> <span>{PHP.L.Validate}</span></a><!-- ENDIF -->
-										<a title="{PHP.L.Delete}" href="{ADMIN_PAGE_URL_FOR_DELETED}" class="confirmLink btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.short_delete}</span></a>
-										<a title="{PHP.L.Open}" href="{ADMIN_PAGE_ID_URL}" target="_blank" class="btn btn-small"><i class="icon-folder-open"></i> <span>{PHP.L.short_open}</span></a>
-										<a title="{PHP.L.Edit}" href="{ADMIN_PAGE_URL_FOR_EDIT}" target="_blank" class="btn btn-small"><i class="icon-edit"></i> <span>{PHP.L.Edit}</span></a>
+										<!-- IF {PHP.row.page_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PAGE_URL_FOR_VALIDATED}" class="confirmLink btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-flag-checkered"></i> <span>{PHP.L.Validate}</span></a><!-- ENDIF -->
+										<a title="{PHP.L.Delete}" href="{ADMIN_PAGE_URL_FOR_DELETED}" class="confirmLink btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> <span>{PHP.L.short_delete}</span></a>
+										<a title="{PHP.L.Open}" href="{ADMIN_PAGE_ID_URL}" target="_blank" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-folder-open"></i> <span>{PHP.L.short_open}</span></a>
+										<a title="{PHP.L.Edit}" href="{ADMIN_PAGE_URL_FOR_EDIT}" target="_blank" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-edit"></i> <span>{PHP.L.Edit}</span></a>
 									</div>
 								</td>
 							</tr>

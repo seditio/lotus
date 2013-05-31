@@ -27,9 +27,9 @@
 								<td class="centerall action">
 									<div class="btn-group">
 <!-- IF {ADMIN_TRASHCAN_ROW_RESTORE_ENABLED} -->
-										<a title="{PHP.L.Restore}" href="{ADMIN_TRASHCAN_ROW_RESTORE_URL}" class="btn btn-small"><i class="icon-share"></i> <span>{PHP.L.Restore}</span></a>
+										<a title="{PHP.L.Restore}" href="{ADMIN_TRASHCAN_ROW_RESTORE_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-share"></i> <span>{PHP.L.Restore}</span></a>
 <!-- ENDIF -->
-										<a title="{PHP.L.Wipe}" href="{ADMIN_TRASHCAN_ROW_WIPE_URL}" class="btn btn-small"><i class="icon-remove"></i> <span>{PHP.L.Wipe}</span></a>
+										<a title="{PHP.L.Wipe}" href="{ADMIN_TRASHCAN_ROW_WIPE_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> <span>{PHP.L.Wipe}</span></a>
 									</div>
 								</td>
 							</tr>

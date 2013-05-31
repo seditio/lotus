@@ -64,8 +64,8 @@
 									</td>
 <!-- END: RIGHTS_ROW_ITEMS -->
 									<td class="text-center">
-										<a class="btn btn-warning btn-small" title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_RIGHTSBYITEM}"><i class="icon-lock"></i> {PHP.L.Rights}</a>
-										<a class="btn btn-success btn-small" title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_LINK}"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+										<a class="btn btn-{PHP.R.admin-config-buttonsize}" title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_RIGHTSBYITEM}"><i class="icon-lock"></i> {PHP.L.Rights}</a>
+										<a class="btn btn-{PHP.R.admin-config-buttonsize}" title="{PHP.L.Rights}" href="{ADMIN_RIGHTS_ROW_LINK}"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
 									</td>
 									<td class="text-center">{ADMIN_RIGHTS_ROW_USER}{ADMIN_RIGHTS_ROW_PRESERVE}</td>
 								</tr>

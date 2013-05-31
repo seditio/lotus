@@ -16,7 +16,7 @@
 			</tr>
 <!-- END: ADMIN_HOME_ROW -->
 		</table>
-		<p class="clearfix"><a href="{ADMIN_HOME_MORE_HITS_URL}" class="btn btn-primary btn-small pull-right"><i class="icon-hand-right"></i> {PHP.L.ReadMore}</a></p>
+		<p class="clearfix"><a href="{ADMIN_HOME_MORE_HITS_URL}" class="btn btn-{PHP.R.admin-config-buttonsize} pull-right"><i class="icon-hand-right"></i> {PHP.L.ReadMore}</a></p>
 	</div>
 <!-- END: STAT -->
 

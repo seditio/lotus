@@ -8,7 +8,8 @@
 <!-- IF {PHP.usr.isadmin} -->
 							<a title="{PHP.L.adm_purgeall}" href="{ADMIN_LOG_URL_PRUNE}" class="ajax btn btn-danger"><i class="icon-remove"></i> {PHP.L.adm_purgeall}</a>
 <!-- ENDIF -->
-							<form action="" class="pull-right">{PHP.L.Group}:
+							<form action="" class="pull-right">
+								{PHP.L.Group}:
 								<select name="groups" size="1" onchange="redirect(this)">
 <!-- BEGIN: GROUP_SELECT_OPTION -->
 									<option value="{ADMIN_LOG_OPTION_VALUE_URL}"{ADMIN_LOG_OPTION_SELECTED}>{ADMIN_LOG_OPTION_GRP_NAME}</option>

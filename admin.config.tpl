@@ -33,7 +33,7 @@
 									</td>
 									<td class="action centerall">
 										<div class="btn-group">
-											<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-success btn-mini">
+											<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}">
 												<i class="icon-refresh"></i> <span>{PHP.L.Reset}</span>
 											</a>
 										</div>

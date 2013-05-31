@@ -2,6 +2,7 @@
 
 defined('COT_CODE') or die('Wrong URL');
 
+$R['admin-config-buttonsize'] = 'small';
 $R['admin-config-pagialign'] = 'centered';
 $R['admin-config-pagisize'] = 'small';
 

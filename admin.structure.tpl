@@ -100,11 +100,11 @@
 						<td class="centerall {ADMIN_STRUCTURE_ODDEVEN}">{ADMIN_STRUCTURE_COUNT}</td>
 						<td class="action {ADMIN_STRUCTURE_ODDEVEN} centerall">
 							<div class="btn-group">
-							<a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.Config}" class="btn btn-mini"><i class="icon-cog"></i> {PHP.L.short_config}</a>
-							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a title="{PHP.L.Rights}" href="{ADMIN_STRUCTURE_RIGHTS_URL}" class="btn btn-mini"><i class="icon-lock"></i> {PHP.L.short_rights}</a><!-- ENDIF -->
-							<a title="{PHP.L.Options}" href="{ADMIN_STRUCTURE_OPTIONS_URL}" class="ajax btn btn-mini"><i class="icon-edit"></i> {PHP.L.short_options}</a>
-							<!-- IF {PHP.dozvil} --><a title="{PHP.L.Delete}" href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" class="confirmLink btn btn-mini"><i class="icon-remove"></i> {PHP.L.short_delete}</a><!-- ENDIF -->
-							<a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.Pages}" class="button btn btn-mini"><i class="icon-folder-open"></i> {PHP.L.short_open}</a> </td>
+							<a href="{ADMIN_STRUCTURE_CONFIG_URL}" title="{PHP.L.Config}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-cog"></i> {PHP.L.short_config}</a>
+							<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a title="{PHP.L.Rights}" href="{ADMIN_STRUCTURE_RIGHTS_URL}" class="btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-lock"></i> {PHP.L.short_rights}</a><!-- ENDIF -->
+							<a title="{PHP.L.Options}" href="{ADMIN_STRUCTURE_OPTIONS_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-edit"></i> {PHP.L.short_options}</a>
+							<!-- IF {PHP.dozvil} --><a title="{PHP.L.Delete}" href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" class="confirmLink btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.short_delete}</a><!-- ENDIF -->
+							<a href="{ADMIN_STRUCTURE_JUMPTO_URL}" title="{PHP.L.Pages}" class="button btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-folder-open"></i> {PHP.L.short_open}</a> </td>
 							</div>
 					</tr>
 <!-- END: ROW -->

@@ -39,8 +39,8 @@
 										</td>
 <!-- END: ROW_ITEMS -->
 										<td class="centerall">
-											<a class="btn btn-success btn-small" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_JUMPTO}"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
-											<a class="btn btn-warning btn-small" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_LINK}"><i class="icon-lock"></i> {PHP.L.Rights}</a> </td>
+											<a class="btn btn-{PHP.R.admin-config-buttonsize}" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_JUMPTO}"><i class="icon-folder-open"></i> {PHP.L.Open}</a>
+											<a class="btn btn-{PHP.R.admin-config-buttonsize}" title="{PHP.L.Open}" href="{ADMIN_RIGHTSBYITEM_ROW_LINK}"><i class="icon-lock"></i> {PHP.L.Rights}</a> </td>
 										<td class="textcenter">{ADMIN_RIGHTSBYITEM_ROW_USER}{ADMIN_RIGHTSBYITEM_ROW_PRESERVE}</td>
 										
 									</tr>

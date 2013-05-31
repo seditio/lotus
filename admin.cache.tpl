@@ -39,7 +39,7 @@
 								<td class="textcenter">{ADMIN_CACHE_EXPIRE}</td>
 								<td class="textcenter">{ADMIN_CACHE_SIZE}</td>
 								<td>{ADMIN_CACHE_VALUE}</td>
-								<td class="text-center"><a title="{PHP.L.Delete}" href="{ADMIN_CACHE_ITEM_DEL_URL}" class="ajax btn btn-danger btn-small"><i class="icon-remove"></i> {PHP.L.Delete}</a></td>
+								<td class="text-center"><a title="{PHP.L.Delete}" href="{ADMIN_CACHE_ITEM_DEL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-remove"></i> {PHP.L.Delete}</a></td>
 							</tr>
 <!-- END: ADMIN_CACHE_ROW -->
 						</tbody>
