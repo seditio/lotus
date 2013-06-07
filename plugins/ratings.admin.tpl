@@ -32,7 +32,7 @@
 							</tr>
 <!-- END: RATINGS_ROW -->
 						</table>
-						<p class="text-center">{PHP.L.adm_ratings_totalitems}: {ADMIN_RATINGS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_RATINGS_ON_PAGE} {PHP.L.adm_ratings_totalvotes}: {ADMIN_RATINGS_TOTALVOTES}</p>
+						<p class="text-center">{PHP.L.adm_ratings_totalitems}: {ADMIN_RATINGS_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_RATINGS_ON_PAGE} {PHP.L.adm_ratings_totalvotes}: {ADMIN_RATINGS_TOTALVOTES}</p>
 <!-- IF {ADMIN_RATINGS_PAGNAV} -->
 						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
 							<ul>{ADMIN_RATINGS_PAGINATION_PREV}{ADMIN_RATINGS_PAGNAV}{ADMIN_RATINGS_PAGINATION_NEXT}</ul>

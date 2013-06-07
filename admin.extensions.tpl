@@ -191,7 +191,7 @@
 				<td>
 					<div class="btn-group nomargin">
 <!-- IF !{PHP.isinstalled} AND {PHP.dependencies_satisfied} -->
-						<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}">{PHP.L.adm_opt_install}</a>
+						<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax btn btn-{PHP.R.admin-config-buttonsize}"><i class="icon-plus-sign"></i> {PHP.L.adm_opt_install}</a>
 <!-- ENDIF -->
 <!-- IF {PHP.isinstalled} -->
 <!-- IF {PHP.exists} -->

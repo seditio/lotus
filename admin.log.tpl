@@ -41,7 +41,7 @@
 <!-- END: LOG_ROW -->
 							</tbody>
 						</table>
-						<p class="text-center">{PHP.L.Total}: {ADMIN_LOG_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_LOG_ON_PAGE}</p>
+						<p class="text-center">{PHP.L.Total}: {ADMIN_LOG_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_LOG_ON_PAGE}</p>
 <!-- IF {ADMIN_LOG_PAGNAV} -->
 						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
 							<ul>{ADMIN_LOG_PAGINATION_PREV}{ADMIN_LOG_PAGNAV}{ADMIN_LOG_PAGINATION_NEXT}</ul>

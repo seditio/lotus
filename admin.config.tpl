@@ -3,7 +3,6 @@
 			<div id="admin-config" class="row-fluid">
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 <!-- BEGIN: EDIT -->
-				<div class="span12">
 					<div class="block">
 						<h5><i class="icon-cogs"></i> {PHP.L.Configuration}</h5>
 						{ADMIN_CONFIG_EDIT_CUSTOM}
@@ -54,7 +53,6 @@
 							</table>
 						</form>
 					</div>
-				</div>
 <!-- END: EDIT -->
 
 <!-- BEGIN: DEFAULT -->

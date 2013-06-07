@@ -174,7 +174,7 @@
 							<ul>{ADMIN_EXTRAFIELDS_PAGINATION_PREV}{ADMIN_EXTRAFIELDS_PAGNAV}{ADMIN_EXTRAFIELDS_PAGINATION_NEXT}</ul>
 						</div>
 <!-- ENDIF -->
-						<p class="text-center">{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_EXTRAFIELDS_COUNTER_ROW}</p>
+						<p class="text-center">{PHP.L.Total}: {ADMIN_EXTRAFIELDS_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_EXTRAFIELDS_COUNTER_ROW}</p>
 
 
 						<h6>{PHP.L.adm_extrafield_new}:</h6>

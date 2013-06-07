@@ -31,7 +31,7 @@
 							</form>
 <!-- END: ADMIN_BANLIST_ROW -->
 						</table>
-						<p class="text-center">{PHP.L.Total}: {ADMIN_BANLIST_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_BANLIST_COUNTER_ROW}</p>
+						<p class="text-center">{PHP.L.Total}: {ADMIN_BANLIST_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_BANLIST_COUNTER_ROW}</p>
 <!-- IF {ADMIN_BANLIST_PAGNAV} -->
 						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
 							<ul>{ADMIN_BANLIST_PAGINATION_PREV}{ADMIN_BANLIST_PAGNAV}{ADMIN_BANLIST_PAGINATION_NEXT}</ul>

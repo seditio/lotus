@@ -102,7 +102,7 @@
 								</td>
 							</tr>
 						</table>
-						<p class="text-center">{PHP.L.Total}: {ADMIN_PAGE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_PAGE_ON_PAGE}</p>
+						<p class="text-center">{PHP.L.Total}: {ADMIN_PAGE_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_PAGE_ON_PAGE}</p>
 <!-- IF {ADMIN_PAGE_PAGNAV} -->
 						<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
 							<ul>{ADMIN_PAGE_PAGINATION_PREV}{ADMIN_PAGE_PAGNAV}{ADMIN_PAGE_PAGINATION_NEXT}</ul>
