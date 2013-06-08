@@ -22,7 +22,7 @@
 					<h5>{PHP.L.Structure}</h5>
 					{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<div class="btn-group">
-						<a href="{ADMIN_STRUCTURE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields_desc}</a>
+						<a href="{ADMIN_STRUCTURE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.adm_extrafields}</a>
 						<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="ajax btn btn-success" title="{PHP.L.adm_tpl_resyncalltitle}"><i class="icon-refresh icon-spin"></i> {PHP.L.Resync}</a>
 <!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
 						<a href="{ADMIN_STRUCTURE_I18N_URL}" class="button">{PHP.L.i18n_structure}</a>

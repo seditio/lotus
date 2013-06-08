@@ -2,9 +2,14 @@
 
 defined('COT_CODE') or die('Wrong URL');
 
-$R['admin-config-buttonsize'] = 'small';
-$R['admin-config-pagialign'] = 'centered';
-$R['admin-config-pagisize'] = 'small';
+//	Template Settings
+
+$R['admin-config-buttonsize'] = 'small';	// Global button size
+$R['admin-config-pagialign'] = 'centered';	// Global pagination alignment
+$R['admin-config-pagisize'] = 'small';		// Global pagination size
+
+$R['admin-config-icons'] = '1';				// Display item icons (global: config, extensions, users, other)
+$R['admin-config-descs'] = '1';				// Display item descriptions (global: config, extensions, users, other)
 
 // Redefine Pagination
 

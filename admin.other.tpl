@@ -6,37 +6,57 @@
 						<table class="table table-bordered">
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 									<a href="{ADMIN_OTHER_URL_CACHE}">{PHP.L.adm_internalcache}</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<!-- IF {PHP.R.admin-config-descs} -->
+									<p>{PHP.L.adm_internalcache_desc}</p>
+<!-- ENDIF -->
 								</td>
 							</tr>
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 									<a href="{ADMIN_OTHER_URL_DISKCACHE}">{PHP.L.adm_diskcache}</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<!-- IF {PHP.R.admin-config-descs} -->
+									<p>{PHP.L.adm_diskcache_desc}</p>
+<!-- ENDIF -->
 								</td>
 							</tr>
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 									<a href="{ADMIN_OTHER_URL_EXFLDS}">{PHP.L.adm_extrafields}</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<!-- IF {PHP.R.admin-config-descs} -->
+									<p>{PHP.L.adm_extrafields_desc}</p>
+<!-- ENDIF -->
 								</td>
 							</tr>			
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 									<a href="{ADMIN_OTHER_URL_LOG}">{PHP.L.adm_log}</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<!-- IF {PHP.R.admin-config-descs} -->
+									<p>{PHP.L.adm_log_desc}</p>
+<!-- ENDIF -->
 								</td>
 							</tr>
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 									<a href="{ADMIN_OTHER_URL_INFOS}">{PHP.L.adm_infos}</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<!-- IF {PHP.R.admin-config-descs} -->
+									<p>{PHP.L.adm_infos_desc}</p>
+<!-- ENDIF -->
 								</td>
 							</tr>
 						</table>
@@ -50,9 +70,13 @@
 <!-- BEGIN: ROW -->
 								<tr>
 									<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 										<img src="<!-- IF {ADMIN_OTHER_EXT_ICO} -->{ADMIN_OTHER_EXT_ICO}<!-- ELSE -->{PHP.cfg.system_dir}/admin/img/plugins32.png<!-- ENDIF -->" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 										<a href="{ADMIN_OTHER_EXT_URL}">{ADMIN_OTHER_EXT_NAME}</a>
+<!-- IF {PHP.R.admin-config-descs} -->
 										<p>{ADMIN_OTHER_EXT_DESC}</p>
+<!-- ENDIF -->
 									</td>
 								</tr>
 <!-- END: ROW -->

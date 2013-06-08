@@ -65,9 +65,13 @@
 <!-- BEGIN: ADMIN_CONFIG_ROW -->
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<img src="<!-- IF {ADMIN_CONFIG_ROW_ICO} -->{ADMIN_CONFIG_ROW_ICO}<!-- ELSE -->{PHP.cfg.system_dir}/admin/img/plugins32.png<!-- ENDIF -->" alt="" class="visible-desktop" />
+<!-- ENDIF -->
 									<a href="{ADMIN_CONFIG_ROW_URL}" class="ajax thumbicons large strong">{ADMIN_CONFIG_ROW_NAME}</a>
-									<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+<!-- IF {PHP.R.admin-config-descs} -->
+									<p class="small">{ADMIN_CONFIG_ROW_DESC}</p>
+<!-- ENDIF -->
 								</td>
 							</tr>
 <!-- END: ADMIN_CONFIG_ROW -->

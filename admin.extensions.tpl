@@ -45,9 +45,13 @@
 <!-- END: ROW_ERROR_EXT -->
 			<tr>
 				<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 					<img src="<!-- IF {ADMIN_EXTENSIONS_ICO} -->{ADMIN_EXTENSIONS_ICO}<!-- ELSE -->{PHP.cfg.system_dir}/admin/img/plugins32.png<!-- ENDIF -->" alt="" />
+<!-- ENDIF -->
 					<a href="{ADMIN_EXTENSIONS_DETAILS_URL}">{ADMIN_EXTENSIONS_NAME}</a>
+<!-- IF {PHP.R.admin-config-descs} -->
 					<p>{ADMIN_EXTENSIONS_DESCRIPTION|cot_cutstring($this,60)}</p>
+<!-- ENDIF -->
 				</td>
 				<td class="centerall hidden-phone">{ADMIN_EXTENSIONS_CODE_X}</td>
 				<td class="centerall hidden-phone">

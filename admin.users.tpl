@@ -5,7 +5,7 @@
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<div class="btn-group">
 						<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
-						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-plus-sign"></i> {PHP.L.adm_extrafields_desc}</a>
+						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-plus-sign"></i> {PHP.L.adm_extrafields}</a>
 					</div>
 <!-- BEGIN: ADMIN_USERS_DEFAULT -->
 					<table class="table table-bordered">
@@ -21,9 +21,13 @@
 <!-- BEGIN: USERS_ROW -->
 							<tr>
 								<td class="ext-cell">
+<!-- IF {PHP.R.admin-config-icons} -->
 									<!-- IF {PHP.hidden_groups} AND {ADMIN_USERS_ROW_GRP_HIDDEN} == Yes -->{PHP.R.admin_icon_usergroup0}<!-- ELSE -->{PHP.R.admin_icon_usergroup1}<!-- ENDIF -->
+<!-- ENDIF -->
 									<a href="{ADMIN_USERS_ROW_GRP_TITLE_URL}" class="ajax" title="{PHP.L.Edit}">{ADMIN_USERS_ROW_GRP_NAME} (#{ADMIN_USERS_ROW_GRP_ID})</a>
+<!-- IF {PHP.R.admin-config-descs} -->
 									<p>{ADMIN_USERS_ROW_GRP_DESC}</p>
+<!-- ENDIF -->
 								</td>
 								<td class="centerall">{ADMIN_USERS_ROW_GRP_COUNT_MEMBERS}</td>
 								<td class="centerall">{ADMIN_USERS_ROW_GRP_DISABLED}</td>
