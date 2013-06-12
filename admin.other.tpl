@@ -2,8 +2,8 @@
 			<div id="admin-other" class="row-fluid">
 				<div class="span4">
 					<div class="block">
-						<h5>{PHP.L.Core}</h5>
-						<table class="table table-bordered">
+						<h5><i class="icon-cog"></i> {PHP.L.Core}</h5>
+						<table class="table table-striped">
 							<tr>
 								<td class="ext-cell">
 <!-- IF {PHP.R.admin-config-icons} -->
@@ -65,8 +65,8 @@
 <!-- BEGIN: SECTION -->
 					<div class="span4">
 						<div class="block">
-							<h5>{ADMIN_OTHER_SECTION}</h5>
-							<table class="table table-bordered">
+							<h5><i class="icon-cog"></i> {ADMIN_OTHER_SECTION}</h5>
+							<table class="table table-striped">
 <!-- BEGIN: ROW -->
 								<tr>
 									<td class="ext-cell">

@@ -1,14 +1,14 @@
 <!-- BEGIN: MAIN -->
 			<div class="row-fluid">
 				<div class="block">
-					<h5>{PHP.L.Users}</h5>
+					<h5><i class="icon-group"></i> {PHP.L.Users}</h5>
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 					<div class="btn-group">
 						<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_URL}" class="btn btn-primary"><i class="icon-cog"></i> {PHP.L.Configuration}</a>
 						<a href="{ADMIN_USERS_EXTRAFIELDS_URL}" class="btn btn-primary"><i class="icon-plus-sign"></i> {PHP.L.adm_extrafields}</a>
 					</div>
 <!-- BEGIN: ADMIN_USERS_DEFAULT -->
-					<table class="table table-bordered">
+					<table class="table table-bordered table-hover">
 						<thead>
 							<tr>
 								<th class="width50">{PHP.L.Groups}</th>
@@ -46,7 +46,7 @@
 				</div>
 		
 				<div class="block">
-					<h5>{PHP.L.Add}:</h5>
+					<h5><i class="icon-plus-sign"></i> {PHP.L.Add}:</h5>
 					<form name="addlevel" id="addlevel" action="{ADMIN_USERS_FORM_URL}" method="post" class="ajax">
 						<table class="table table-bordered">
 							<tr>

@@ -58,6 +58,12 @@
 							</tr>
 						</table>
 					</div>
+<!-- IF {PHP.cot_plugins_active.pagecom} -->
+{PHP|pagecom('pagecom.admin','5','0','date','','','0')}
+<!-- ENDIF -->
+<!-- IF {PHP.cot_plugins_active.pagelist} -->
+{PHP|pagelist('pagelist.admin','5','page_count DESC','page_count > 0','','','','TRUE','','TRUE')}
+<!-- ENDIF -->
 				</div>
 				<div class="span8">
 <!-- BEGIN: MAINPANEL -->

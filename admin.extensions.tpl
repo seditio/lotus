@@ -6,7 +6,7 @@
 
 <!-- BEGIN: DEFAULT -->
 				<div class="block">
-					<h5>Extensions Control</h5>
+					<h5><i class="icon-puzzle-piece"></i> Extensions Control</h5>
 					<div class="btn-group item-control">
 						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="icon-font"></i> <span>{PHP.L.adm_sort_alphabet}</span></a>
 						<a class="btn btn-primary <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->special<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}"><i class="icon-sitemap"></i> <span>{PHP.L.adm_sort_category}</span></a>
@@ -17,7 +17,7 @@
 
 <!-- BEGIN: SECTION -->
 	<div class="block">
-		<h5>{ADMIN_EXTENSIONS_SECTION_TITLE} ({ADMIN_EXTENSIONS_CNT_EXTP})</h5>
+		<h5><i class="icon-puzzle-piece"></i> {ADMIN_EXTENSIONS_SECTION_TITLE} ({ADMIN_EXTENSIONS_CNT_EXTP})</h5>
 		<table class="table table-bordered table-hover">
 			<thead>
 				<tr>
@@ -98,14 +98,7 @@
 
 <!-- BEGIN: DETAILS -->
 	<div class="block">
-		<h5>
-			<!-- IF {ADMIN_EXTENSIONS_ICO} -->
-				<img src="{ADMIN_EXTENSIONS_ICO}" />
-			<!-- ELSE -->
-				<img src="{PHP.cfg.system_dir}/admin/img/plugins32.png" />
-			<!-- ENDIF -->
-			{ADMIN_EXTENSIONS_TYPE} {ADMIN_EXTENSIONS_NAME}:
-		</h5>
+		<h5><i class="icon-puzzle-piece"></i> {ADMIN_EXTENSIONS_TYPE} {ADMIN_EXTENSIONS_NAME}:</h5>
 		
 	<!-- IF {PHP.isinstalled} AND {PHP.exists} -->
 		<div class="btn-group">
@@ -214,7 +207,7 @@
 	</div>
 	
 	<div class="block">
-		<h5>{PHP.L.Parts}:</h5>
+		<h5><i class="icon-puzzle-piece"></i> {PHP.L.Parts}:</h5>
 		<table class="table table-bordered">
 			<thead>
 				<tr>
@@ -258,7 +251,7 @@
 	</div>
 	
 	<div class="block">
-		<h5>{PHP.L.Tags}:</h5>
+		<h5><i class="icon-puzzle-piece"></i> {PHP.L.Tags}:</h5>
 		<table class="table table-bordered">
 			<thead>
 				<tr>
@@ -287,7 +280,7 @@
 
 <!-- BEGIN: HOOKS -->
 	<div class="block">
-		<h5>{PHP.L.Hooks} ({ADMIN_EXTENSIONS_CNT_HOOK}):</h5>
+		<h5><i class="icon-puzzle-piece"></i> {PHP.L.Hooks} ({ADMIN_EXTENSIONS_CNT_HOOK}):</h5>
 		<table class="table table-bordered">
 			<thead>
 				<tr>
