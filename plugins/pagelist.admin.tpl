@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
 					<div class="block">
-						<h5><i class="icon-comments-alt"></i> Топ-5 лучших страниц</h5>
+						<h5><i class="icon-comments-alt"></i> Топ лучших страниц</h5>
 						<table class="table table-striped">
 <!-- BEGIN: PAGE_ROW -->
 							<tr>
