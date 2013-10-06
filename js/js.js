@@ -2,10 +2,10 @@ $().ready(function() {
 
 	$('#rem a').click(function()
 	{
-		$.cookie('hds', null); // Hide sidebar
-		$.cookie('hdn', null); // Hide main navigation
-		$.cookie('str', null); // Eliminate margins to fill out all space
-		$.cookie('acct', null);
+		$.cookie('hds', null);  // Hide sidebar
+		$.cookie('hdn', null);  // Hide main navigation
+		$.cookie('str', null);  // Eliminate margins to fill out all space
+		$.cookie('acct', null); // Eliminate leftpanel choice
 		return false;
 	});
 
@@ -94,7 +94,7 @@ $().ready(function() {
 	});
 	
 	if ($.cookie('acct')) {
-		$('#menu div#' + $.cookie('acct')).addClass('in');
+		$('#menu div' + $.cookie('acct')).addClass('in');
 	};
 
 	$('#menu div.accordion-heading').click(function()

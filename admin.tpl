@@ -107,24 +107,49 @@
 				</div>
 			</div>
 			
+<!-- IF {PHP.cot_plugins_active.adminstat} -->
 			<div class="miniwidget">
 				<strong>Cotonti Siena Info:</strong>
 				<ul class="unstyled">
-					<li>Версия: <span class="pull-right">{PHP.cfg.version}</span></li>
-					<li>База данных: <span class="pull-right">0.9.14-03</span></li>
-					<li>БД SQL, строк: <span class="pull-right">{PHP.total_rows}</span></li>
-					<li>БД SQL, размер индекса (KB): <span class="pull-right">&mdash;</span></li>
-					<li>БД SQL, размер данных (KB): <span class="pull-right">&mdash;</span></li>
-					<li>БД SQL, общий размер (KB): <span class="pull-right">&mdash;</span></li>
-					<li>Плагины: <span class="pull-right">{PHP.totalplugins}</span></li>
-					<li>Хуки: <span class="pull-right">{PHP.totalhooks}</span></li>
+					<li>{PHP.adminstat.version.title}: <span class="pull-right">{PHP.adminstat.version.value}</span></li>
+					<li>{PHP.adminstat.database.title}: <span class="pull-right">{PHP.adminstat.database.value}</span></li>
+					<li>{PHP.adminstat.db_counts.title}: <span class="pull-right">{PHP.adminstat.db_counts.value}</span></li>
+					<li>{PHP.adminstat.db_rows.title}: <span class="pull-right">{PHP.adminstat.db_rows.value}</span></li>
+					<li>{PHP.adminstat.db_indexsize.title}: <span class="pull-right">{PHP.adminstat.db_indexsize.value}</span></li>
+					<li>{PHP.adminstat.db_datassize.title}: <span class="pull-right">{PHP.adminstat.db_datassize.value}</span></li>
+					<li>{PHP.adminstat.db_totalsize.title}: <span class="pull-right">{PHP.adminstat.db_totalsize.value}</span></li>
+					<li>{PHP.adminstat.active_modules.title}: <span class="pull-right">{PHP.adminstat.active_modules.value} {PHP.L.Of} {PHP.adminstat.modules.value}</span></li>
+					<li>{PHP.adminstat.active_plugins.title}: <span class="pull-right">{PHP.adminstat.active_plugins.value} {PHP.L.Of} {PHP.adminstat.plugins.value}</span></li>
+					<li>{PHP.adminstat.active_hooks.title}: <span class="pull-right">{PHP.adminstat.active_hooks.value} {PHP.L.Of} {PHP.adminstat.hooks.value}</span></li>
 				</ul>
 			</div>
 			<hr>
 			<div class="miniwidget">
+				<strong>Статистика за 2 недели:</strong>
+				<ul class="unstyled">
+<!-- IF {PHP.cot_modules.page} -->
+					<li>Новых страниц: <span class="pull-right">{PHP|item_counter('page', 14)}</span></li>
+<!-- ENDIF -->
+<!-- IF {PHP.cot_plugins_active.comments} -->
+					<li>Новых комментариев: <span class="pull-right">{PHP|item_counter('comments', 14)}</span></li>
+<!-- ENDIF -->
+<!-- IF {PHP.cot_modules.forums} -->
+					<li>Новых постов: <span class="pull-right">{PHP|item_counter('posts', 14)}</span></li>
+					<li>Новых топиков: <span class="pull-right">{PHP|item_counter('topics', 14)}</span></li>
+<!-- ENDIF -->
+<!-- IF {PHP.cot_modules.pm} -->
+					<li>Новых сообщений: <span class="pull-right">{PHP|item_counter('pm', 14)}</span></li>
+<!-- ENDIF -->
+				</ul>
+			</div>
+			<hr>
+<!-- ENDIF -->
+			
+			<div class="miniwidget">
 				<p>Powered by <a href="http://www.cotonti.com">Cotonti Siena</a></p>
 				<p>Theme developed by <a href="http://www.seditio.by">Seditio.by</a></p>
 			</div>
+			
 			<hr>
 
 		</div>
