@@ -107,39 +107,49 @@
 				</div>
 			</div>
 			
-<!-- IF {PHP.cot_plugins_active.adminstat} -->
+<!-- IF {PHP.cot_plugins_active.adminstats} -->
 			<div class="miniwidget">
-				<strong>Cotonti Siena Info:</strong>
+				<strong>{PHP.L.Engine}:</strong>
 				<ul class="unstyled">
-					<li>{PHP.adminstat.version.title}: <span class="pull-right">{PHP.adminstat.version.value}</span></li>
-					<li>{PHP.adminstat.database.title}: <span class="pull-right">{PHP.adminstat.database.value}</span></li>
-					<li>{PHP.adminstat.db_counts.title}: <span class="pull-right">{PHP.adminstat.db_counts.value}</span></li>
-					<li>{PHP.adminstat.db_rows.title}: <span class="pull-right">{PHP.adminstat.db_rows.value}</span></li>
-					<li>{PHP.adminstat.db_indexsize.title}: <span class="pull-right">{PHP.adminstat.db_indexsize.value}</span></li>
-					<li>{PHP.adminstat.db_datassize.title}: <span class="pull-right">{PHP.adminstat.db_datassize.value}</span></li>
-					<li>{PHP.adminstat.db_totalsize.title}: <span class="pull-right">{PHP.adminstat.db_totalsize.value}</span></li>
-					<li>{PHP.adminstat.active_modules.title}: <span class="pull-right">{PHP.adminstat.active_modules.value} {PHP.L.Of} {PHP.adminstat.modules.value}</span></li>
-					<li>{PHP.adminstat.active_plugins.title}: <span class="pull-right">{PHP.adminstat.active_plugins.value} {PHP.L.Of} {PHP.adminstat.plugins.value}</span></li>
-					<li>{PHP.adminstat.active_hooks.title}: <span class="pull-right">{PHP.adminstat.active_hooks.value} {PHP.L.Of} {PHP.adminstat.hooks.value}</span></li>
+					<li>{PHP.adminstats.version.title}: <span class="pull-right">{PHP.adminstats.version.value}</span></li>
+					<li>{PHP.adminstats.database.title}: <span class="pull-right">{PHP.adminstats.database.value}</span></li>
+					
+					<li>{PHP.adminstats.defaulttheme.title}: <span class="pull-right">{PHP.adminstats.defaulttheme.value}</span></li>
+					<li>{PHP.adminstats.defaultscheme.title}: <span class="pull-right lower">{PHP.adminstats.defaultscheme.value}</span></li>
+					<li>{PHP.adminstats.defaulticons.title}: <span class="pull-right lower">{PHP.adminstats.defaulticons.value}</span></li>
+					<li>{PHP.adminstats.defaultlang.title}: <span class="pull-right">{PHP.adminstats.defaultlang.value}</span></li>
+					<li>{PHP.adminstats.admintheme.title}: <span class="pull-right">{PHP.adminstats.admintheme.value}</span></li>
+					
+					<li>{PHP.adminstats.active_modules.title}: <span class="pull-right">{PHP.adminstats.active_modules.value} {PHP.L.Of} {PHP.adminstats.modules.value}</span></li>
+					<li>{PHP.adminstats.active_plugins.title}: <span class="pull-right">{PHP.adminstats.active_plugins.value} {PHP.L.Of} {PHP.adminstats.plugins.value}</span></li>
+					<li>{PHP.adminstats.active_hooks.title}: <span class="pull-right">{PHP.adminstats.active_hooks.value} {PHP.L.Of} {PHP.adminstats.hooks.value}</span></li>
+					
+					<li>{PHP.adminstats.check_updates.title}: <span class="pull-right lower">{PHP.adminstats.check_updates.value}</span></li>
+					<li>{PHP.adminstats.debug_mode.title}: <span class="pull-right lower">{PHP.adminstats.debug_mode.value}</span></li>
 				</ul>
 			</div>
 			<hr>
 			<div class="miniwidget">
-				<strong>Статистика за 2 недели:</strong>
+				<strong>{PHP.L.Activityfor} {PHP.R.Recent|cot_declension($this, Days)}:</strong>
 				<ul class="unstyled">
 <!-- IF {PHP.cot_modules.page} -->
-					<li>Новых страниц: <span class="pull-right">{PHP|item_counter('page', 14)}</span></li>
+					<li>{PHP.L.Newpages}: <span class="pull-right">{PHP.R.Recent|item_counter('page', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.comments} -->
-					<li>Новых комментариев: <span class="pull-right">{PHP|item_counter('comments', 14)}</span></li>
+					<li>{PHP.L.Newcomments}: <span class="pull-right">{PHP.R.Recent|item_counter('comments', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_modules.forums} -->
-					<li>Новых постов: <span class="pull-right">{PHP|item_counter('posts', 14)}</span></li>
-					<li>Новых топиков: <span class="pull-right">{PHP|item_counter('topics', 14)}</span></li>
+					<li>{PHP.L.Newposts}: <span class="pull-right">{PHP.R.Recent|item_counter('posts', $this)}</span></li>
+					<li>{PHP.L.Newtopics}: <span class="pull-right">{PHP.R.Recent|item_counter('topics', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_modules.pm} -->
-					<li>Новых сообщений: <span class="pull-right">{PHP|item_counter('pm', 14)}</span></li>
+					<li>{PHP.L.Newpm}: <span class="pull-right">{PHP.R.Recent|item_counter('pm', $this)}</span></li>
 <!-- ENDIF -->
+<!-- IF {PHP.cot_modules.polls} -->
+					<li>{PHP.L.Newpolls}: <span class="pull-right">{PHP.R.Recent|item_counter('polls', $this)}</span></li>
+<!-- ENDIF -->
+					<li>{PHP.L.Newusers}: <span class="pull-right">{PHP.R.Recent|item_counter('users_reg', $this)}</span></li>
+					<li>{PHP.L.Retusers}: <span class="pull-right">{PHP.R.Recent|item_counter('users', $this)}</span></li>
 				</ul>
 			</div>
 			<hr>

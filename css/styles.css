@@ -100,6 +100,8 @@ h6		{ font-size:13px; }
 /* 99. Misc
 -------------------------------------------------- */
 
+.lower				{ text-transform:lowercase; }
+
 .strong				{ font-weight:bold; }
 .small				{ font-size:12px; line-height:16px; margin-bottom:0; }
 .large				{ font-size:14px; }

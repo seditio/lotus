@@ -22,3 +22,6 @@ $R['link_pagenav_last'] = '<li class=""><a href="{$url}"{$event}{$rel}>'.$L['pag
 
 $R['input_text_metatitle'] = '<textarea name="{$name}" rows="2" cols="64" maxlength="255" class="input-block-level">{$value}</textarea>';
 $R['input_text_metadesc'] = '<textarea name="{$name}" rows="2" cols="64" maxlength="255" class="input-block-level">{$value}</textarea>';
+
+// Recent Activities
+$R['Recent'] = '14';

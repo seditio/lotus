@@ -20,6 +20,7 @@
 	</div>
 <!-- END: STAT -->
 
+<!-- BEGIN: NOPARSE -->
 <!-- BEGIN: ACTIVITY -->
 	<div class="block">
 		<h5><i class="icon-bar-chart"></i> {PHP.L.hits_activity}</h5>
@@ -51,5 +52,6 @@
 		</table>
 	</div>
 <!-- END: ACTIVITY -->
+<!-- END: NOPARSE -->
 
 <!-- END: MAIN -->
