@@ -118,6 +118,14 @@
 						<h5><i class="icon-code"></i> {PHP.L.Security}:</h5>
 						<table class="table table-striped">
 							<tr>
+								<td>{PHP.adminstats.debug_mode.title}</td>
+								<td class="text-right lower">{PHP.adminstats.debug_mode.value}</td>
+							</tr>
+							<tr>
+								<td>{PHP.adminstats.display_errors.title}</td>
+								<td class="text-right lower">{PHP.adminstats.display_errors.value}</td>
+							</tr>
+							<tr>
 								<td>{PHP.adminstats.ipcheck.title}</td>
 								<td class="text-right lower">{PHP.adminstats.ipcheck.value}</td>
 							</tr>
