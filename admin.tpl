@@ -16,7 +16,11 @@
 							</a>
 						</li>
 						<li>
+<!-- IF {PHP.cot_plugins_active.usermanager} -->
+							<a href="{PHP|cot_url('admin','m=other&p=usermanager&a=profile')}" class="btn btn-mini btn-block disabled">
+<!-- ELSE -->
 							<a href="{PHP|cot_url('users','m=profile')}" class="btn btn-mini btn-block disabled">
+<!-- ENDIF -->
 								<i class="icon-user"></i> <span>{PHP.usr.name}</span>
 							</a>
 						</li>
@@ -35,8 +39,24 @@
 				<p>{PHP.L.admin-hi}, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a></p>
 				<i class="icon-user icon-3x icon-border pull-left"></i>
 				<ul>
-					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=profile')}"><i class="icon-user-md"></i> {PHP.L.Profile}</a></li>
-					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=details')}"><i class="icon-file-alt"></i> {PHP.L.Page}</a></li>
+					<li>
+<!-- IF {PHP.cot_plugins_active.usermanager} -->
+						<a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('admin','m=other&p=usermanager&a=profile')}">
+<!-- ELSE -->
+						<a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=profile')}">
+<!-- ENDIF -->
+							<i class="icon-user-md"></i> {PHP.L.Profile}
+						</a>
+					</li>
+					<li>
+<!-- IF {PHP.cot_plugins_active.usermanager} -->
+						<a class="btn btn-mini btn-block disabled" href="{PHP.usr.id|cot_url('admin','m=other&p=usermanager&a=details&id=$this')}">
+<!-- ELSE -->
+						<a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('users','m=details')}">
+<!-- ENDIF -->
+							<i class="icon-file-alt"></i> {PHP.L.Page}
+						</a>
+					</li>
 					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('pm','')}"><i class="icon-comment-alt"></i> {PHP.L.Private_Messages}</a></li>
 					<li class="loginout">{PHP.out.loginout}</li>
 				</ul>
