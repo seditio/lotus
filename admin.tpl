@@ -57,7 +57,9 @@
 							<i class="icon-file-alt"></i> {PHP.L.Page}
 						</a>
 					</li>
+<!-- IF {PHP.cot_modules.pm} -->
 					<li><a class="btn btn-mini btn-block disabled" href="{PHP|cot_url('pm','')}"><i class="icon-comment-alt"></i> {PHP.L.Private_Messages}</a></li>
+<!-- ENDIF -->
 					<li class="loginout">{PHP.out.loginout}</li>
 				</ul>
 			</div>
